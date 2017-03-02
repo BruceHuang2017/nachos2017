@@ -117,7 +117,7 @@ public final class Interrupt {
      * @return <tt>true</tt> if interrupts are disabled.
      */
     public boolean disabled() {
-	return !enabled;
+		return !enabled;
     }
 
     private void schedule(long when, String type, Runnable handler) {
