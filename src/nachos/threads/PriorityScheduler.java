@@ -42,7 +42,7 @@ public class PriorityScheduler extends Scheduler {
      * @return	a new priority thread queue.
      */
     public ThreadQueue newThreadQueue(boolean transferPriority) {
-	return new PriorityQueue(transferPriority);
+    	return new PriorityQueue(transferPriority);
     }
 
     public int getPriority(KThread thread) {

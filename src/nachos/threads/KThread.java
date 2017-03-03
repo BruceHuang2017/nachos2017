@@ -47,6 +47,8 @@ public class KThread {
 			tcb = new TCB();
 		}
 		else {
+			// transferPriority is for priority scheduling.
+			// abstract method is to pass/return specific type only.
 			readyQueue = ThreadedKernel.scheduler.newThreadQueue(false);
 			readyQueue.acquire(this);
 
@@ -64,7 +66,7 @@ public class KThread {
      * @param	target	the object whose <tt>run</tt> method is called.
      */
     public KThread(Runnable target) {
-		this();
+		this(); //  avoid constructor code duplications
 		this.target = target;
     }
 
@@ -273,22 +275,27 @@ public class KThread {
      * thread.
      */
     public void join() {
+    	// limited access situation. thread queue implements.
 		Lib.debug(dbgThread, "Joining to thread: " + toString());
 
 		// thread q methods used when interrupts disabled.
 		Lib.assertTrue(Machine.interrupt().disabled());
 
-		// limit access in nachos
-		ThreadQueue a = ThreadedKernel.scheduler.newThreadQueue(false);
-		// check: currentThread is KThread, this thread is new thread.
+		// limit access
+//		ThreadQueue a = ThreadedKernel.scheduler.newThreadQueue(false);
+
+		// currentThread is other threads.
+		// this thread is new thread which calls this method, the target thread.
 		Lib.assertTrue(this != currentThread);
+
 		// if new thread status is finished, return immediately.
 		if(this.status == statusFinished){
 			return;
 		}
+
 		// save currentThread status and sleep.
+		readyQueue.acquire(this);
 		readyQueue.waitForAccess(currentThread);
-//		currentThread.saveState();
 		sleep();// will run next thread automatically.
 		Machine.interrupt().enable();
 

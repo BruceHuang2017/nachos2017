@@ -31,11 +31,11 @@ public class Condition2 {
      * automatically reacquire the lock before <tt>sleep()</tt> returns.
      */
     public void sleep() {
-	Lib.assertTrue(conditionLock.isHeldByCurrentThread());
+        Lib.assertTrue(conditionLock.isHeldByCurrentThread());
 
-	conditionLock.release();
+        conditionLock.release();
 
-	conditionLock.acquire();
+        conditionLock.acquire();
     }
 
     /**
