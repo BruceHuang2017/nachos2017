@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="4 shot">
+    <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/PriorityScheduler$PriorityQueue.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/PriorityScheduler$ThreadState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/PriorityScheduler.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$1.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$2.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$PingTest.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$PingTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" afterPath="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/machine/TCB.java" afterPath="$PROJECT_DIR$/src/nachos/machine/TCB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/KThread.java" afterPath="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,32 +40,76 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="794">
-                  <caret line="276" column="47" lean-forward="true" selection-start-line="276" selection-start-column="47" selection-end-line="276" selection-end-column="47" />
-                  <folding>
-                    <element signature="e#2810#2811#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.5">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file leaf-file-name="KThread.java" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="203">
+                      <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
+                      <folding>
+                        <element signature="e#2796#2797#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="132">
+                      <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="37" />
+                      <folding>
+                        <element signature="e#3799#3800#0" expanded="true" />
+                        <element signature="e#3849#3850#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="Interrupt.java" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/nachos/machine/Interrupt.java">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="312">
+                      <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+                      <folding>
+                        <element signature="e#3446#3447#0" expanded="true" />
+                        <element signature="e#3471#3472#0" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <leaf>
           <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="335" column="16" lean-forward="false" selection-start-line="335" selection-start-column="16" selection-end-line="335" selection-end-column="16" />
+                <state relative-caret-position="293">
+                  <caret line="223" column="21" lean-forward="false" selection-start-line="223" selection-start-column="8" selection-end-line="223" selection-end-column="21" />
                   <folding>
-                    <element signature="e#2810#2811#0" expanded="true" />
-                    <element signature="e#2852#2853#0" expanded="true" />
+                    <element signature="e#2796#2797#0" expanded="true" />
+                    <element signature="e#2838#2839#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Scheduler.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="828">
+                  <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -77,6 +129,22 @@
       <find>sleep</find>
       <find>interrupt()</find>
       <find>readyQueue</find>
+      <find>this</find>
+      <find>kthread</find>
+      <find>yield()</find>
+      <find>waitQueue</find>
+      <find>restorestate</find>
+      <find>target</find>
+      <find>createIdleThread</find>
+      <find>private</find>
+      <find>KThread</find>
+      <find>contextswitch</find>
+      <find>acquire</find>
+      <find>savestate</find>
+      <find>sleep()</find>
+      <find>runNextThread</find>
+      <find>join()</find>
+      <find>scheduler</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,6 +164,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/TCB.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
       </list>
     </option>
@@ -616,7 +685,7 @@
       <option name="presentableId" value="Default" />
       <updated>1488467529123</updated>
       <workItem from="1488467530552" duration="971000" />
-      <workItem from="1488468513285" duration="4393000" />
+      <workItem from="1488468513285" duration="19206000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -625,11 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488468240479</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="4 shot">
+      <created>1488492042105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1488492042105</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5364000" />
+    <option name="totallyTimeSpent" value="20177000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -642,7 +718,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="21" width="1863" height="1059" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -667,7 +743,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -727,10 +803,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/TCB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1795">
+          <caret line="161" column="25" lean-forward="false" selection-start-line="161" selection-start-column="25" selection-end-line="161" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/machine/Interrupt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="41" column="19" lean-forward="false" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        <state relative-caret-position="312">
+          <caret line="118" column="19" lean-forward="false" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
           <folding>
             <element signature="e#3446#3447#0" expanded="true" />
             <element signature="e#3471#3472#0" expanded="true" />
@@ -738,13 +830,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="335" column="16" lean-forward="false" selection-start-line="335" selection-start-column="16" selection-end-line="335" selection-end-column="16" />
+        <state relative-caret-position="203">
+          <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
           <folding>
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2852#2853#0" expanded="true" />
+            <element signature="e#2796#2797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="37" />
+          <folding>
+            <element signature="e#3799#3800#0" expanded="true" />
+            <element signature="e#3849#3850#0" expanded="true" />
           </folding>
         </state>
       </provider>
