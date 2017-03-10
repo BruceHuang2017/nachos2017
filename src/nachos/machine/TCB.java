@@ -320,10 +320,10 @@ public final class TCB {
     }
 
     private static void authorizeDestroy(KThread thread) {
-	// make sure AutoGrader.finishingThread() gets called only once per
-	// destroy
-	Lib.assertTrue(toBeDestroyed == null);
-	toBeDestroyed = thread;
+        // make sure AutoGrader.finishingThread() gets called only once per
+        // destroy
+        Lib.assertTrue(toBeDestroyed == null);
+        toBeDestroyed = thread;
     }
 
     /**

@@ -274,32 +274,18 @@ public class KThread {
      * call is not guaranteed to return. This thread must not be the current
      * thread.
      */
+
     public void join() {
-    	// limited access situation. thread queue implements.
 		Lib.debug(dbgThread, "Joining to thread: " + toString());
-
-		// thread q methods used when interrupts disabled.
-		Lib.assertTrue(Machine.interrupt().disabled());
-
-		// limit access
-//		ThreadQueue a = ThreadedKernel.scheduler.newThreadQueue(false);
-
-		// currentThread is other threads.
-		// this thread is new thread which calls this method, the target thread.
 		Lib.assertTrue(this != currentThread);
+		boolean intStatus = Machine.interrupt().disable();
 
-		// if new thread status is finished, return immediately.
-		if(this.status == statusFinished){
-			return;
-		}
 
-		// save currentThread status and sleep.
-		readyQueue.acquire(this);
-		readyQueue.waitForAccess(currentThread);
-		sleep();// will run next thread automatically.
-		Machine.interrupt().enable();
 
-    }
+		Machine.interrupt().restore(intStatus);
+
+
+	}
 
     /**
      * Create the idle thread. Whenever there are no threads ready to be run,
