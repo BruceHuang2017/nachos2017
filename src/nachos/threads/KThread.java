@@ -50,6 +50,7 @@ public class KThread {
 			// transferPriority is for priority scheduling.
 			// abstract method is to pass/return specific type only.
 			readyQueue = ThreadedKernel.scheduler.newThreadQueue(false);
+			joinQueue = ThreadedKernel.scheduler.newThreadQueue(false);
 			readyQueue.acquire(this);
 
 			currentThread = this;
@@ -274,17 +275,17 @@ public class KThread {
      * call is not guaranteed to return. This thread must not be the current
      * thread.
      */
-
     public void join() {
 		Lib.debug(dbgThread, "Joining to thread: " + toString());
 		Lib.assertTrue(this != currentThread);
 		boolean intStatus = Machine.interrupt().disable();
+		joinQueue.waitForAccess(currentThread);
+		sleep();
 
-
+		if (this.status == statusFinished) return;
+		joinQueue.acquire(this);
 
 		Machine.interrupt().restore(intStatus);
-
-
 	}
 
     /**
@@ -449,7 +450,8 @@ public class KThread {
     private static int numCreated = 0;
 
     private static ThreadQueue readyQueue = null;
-    private static KThread currentThread = null;
+	private static ThreadQueue joinQueue = null;
+	private static KThread currentThread = null;
     private static KThread toBeDestroyed = null;
     private static KThread idleThread = null;
 }

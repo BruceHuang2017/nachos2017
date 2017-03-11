@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$1.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$2.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$PingTest.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$PingTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/machine/TCB.java" afterPath="$PROJECT_DIR$/src/nachos/machine/TCB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/KThread.java" afterPath="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +39,8 @@
           <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="358">
-                  <caret line="263" column="29" lean-forward="true" selection-start-line="263" selection-start-column="29" selection-end-line="263" selection-end-column="29" />
+                <state relative-caret-position="187">
+                  <caret line="273" column="52" lean-forward="false" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
                   <folding />
                 </state>
               </provider>
@@ -55,48 +53,8 @@
           <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="300" column="0" lean-forward="false" selection-start-line="300" selection-start-column="0" selection-end-line="300" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TCB.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/nachos/machine/TCB.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ThreadedKernel.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="50" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Scheduler.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ThreadQueue.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+                <state relative-caret-position="522">
+                  <caret line="266" column="43" lean-forward="false" selection-start-line="266" selection-start-column="43" selection-end-line="266" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -136,6 +94,7 @@
       <find>scheduler</find>
       <find>sleep</find>
       <find>join</find>
+      <find>waitForAccess</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -699,7 +658,7 @@
       <workItem from="1489010023996" duration="36000" />
       <workItem from="1489010090589" duration="2096000" />
       <workItem from="1489124273748" duration="12000" />
-      <workItem from="1489124340840" duration="179000" />
+      <workItem from="1489124340840" duration="2887000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -729,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488524389942</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="spring break job">
+      <created>1489124536565</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489124536566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32692000" />
+    <option name="totallyTimeSpent" value="35400000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,6 +717,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -775,7 +742,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -790,7 +756,8 @@
     <MESSAGE value="4 shot" />
     <MESSAGE value="after school, before due day." />
     <MESSAGE value="before submit." />
-    <option name="LAST_COMMIT_MESSAGE" value="before submit." />
+    <MESSAGE value="spring break job" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring break job" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1147,14 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1181,24 +1140,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="496">
+          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/machine/TCB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-9">
           <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="263" column="29" lean-forward="true" selection-start-line="263" selection-start-column="29" selection-end-line="263" selection-end-column="29" />
+        <state relative-caret-position="187">
+          <caret line="273" column="52" lean-forward="false" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
           <folding />
         </state>
       </provider>
