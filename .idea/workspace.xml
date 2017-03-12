@@ -2,12 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$1.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$2.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$PingTest.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread$PingTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/machine/Config.java" afterPath="$PROJECT_DIR$/src/nachos/machine/Config.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" afterPath="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/machine/Stats.java" afterPath="$PROJECT_DIR$/src/nachos/machine/Stats.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/Condition.java" afterPath="$PROJECT_DIR$/src/nachos/threads/Condition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/Condition2.java" afterPath="$PROJECT_DIR$/src/nachos/threads/Condition2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/KThread.java" afterPath="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/Lock.java" afterPath="$PROJECT_DIR$/src/nachos/threads/Lock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java" afterPath="$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +46,21 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+          <file leaf-file-name="Condition2.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition2.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="273" column="52" lean-forward="false" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
+                <state relative-caret-position="221">
+                  <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Alarm.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -49,13 +69,67 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
+        <leaf>
+          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="522">
-                  <caret line="266" column="43" lean-forward="false" selection-start-line="266" selection-start-column="43" selection-end-line="266" selection-end-column="43" />
+                <state relative-caret-position="293">
+                  <caret line="250" column="4" lean-forward="false" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
+                  <folding>
+                    <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+                    <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+                    <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+                    <element signature="method#setName#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+                    <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+                    <element signature="method#fork#0;class#KThread#0" expanded="false" />
+                    <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#begin#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+                    <element signature="method#finish#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+                    <element signature="method#yield#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+                    <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+                    <element signature="method#join#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ThreadedKernel.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="567">
+                  <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RoundRobinScheduler.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="761">
+                  <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#820#821#0" expanded="true" />
+                    <element signature="e#849#850#0" expanded="true" />
+                    <element signature="e#2124#2133#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -66,10 +140,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>toString()</find>
-      <find>currentThread</find>
-      <find>tostring</find>
-      <find>id</find>
       <find>name</find>
       <find>interrupt()</find>
       <find>readyQueue</find>
@@ -77,7 +147,6 @@
       <find>kthread</find>
       <find>yield()</find>
       <find>waitQueue</find>
-      <find>restorestate</find>
       <find>target</find>
       <find>createIdleThread</find>
       <find>private</find>
@@ -91,10 +160,16 @@
       <find>newthreadqueue</find>
       <find>enabled</find>
       <find>finishing</find>
-      <find>scheduler</find>
-      <find>sleep</find>
       <find>join</find>
+      <find>getThreadState</find>
+      <find>fork</find>
+      <find>run</find>
+      <find>run()</find>
       <find>waitForAccess</find>
+      <find>ready</find>
+      <find>sleep</find>
+      <find>restorestate</find>
+      <find>scheduler</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,12 +188,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" />
-        <option value="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/Alarm.java" />
-        <option value="$PROJECT_DIR$/src/nachos/threads/Condition2.java" />
         <option value="$PROJECT_DIR$/src/nachos/machine/TCB.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Condition.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Lock.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Stats.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Config.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Condition2.java" />
       </list>
     </option>
   </component>
@@ -127,6 +208,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="57" />
@@ -212,7 +296,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -658,7 +742,7 @@
       <workItem from="1489010023996" duration="36000" />
       <workItem from="1489010090589" duration="2096000" />
       <workItem from="1489124273748" duration="12000" />
-      <workItem from="1489124340840" duration="2887000" />
+      <workItem from="1489124340840" duration="24019000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -695,11 +779,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489124536566</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="night work">
+      <created>1489217723280</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1489217723280</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35400000" />
+    <option name="totallyTimeSpent" value="56532000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -715,34 +806,34 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5030628" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.49693722" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.307772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14991763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.49693722" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29533678" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1383855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="745" y="541" width="379" height="539" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +848,8 @@
     <MESSAGE value="after school, before due day." />
     <MESSAGE value="before submit." />
     <MESSAGE value="spring break job" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring break job" />
+    <MESSAGE value="night work" />
+    <option name="LAST_COMMIT_MESSAGE" value="night work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -768,62 +860,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/machine/TCB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5423">
-          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/machine/TCB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5423">
-          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -860,7 +896,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5202">
           <caret line="295" column="49" lean-forward="false" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -916,7 +982,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5202">
           <caret line="295" column="49" lean-forward="false" selection-start-line="295" selection-start-column="49" selection-end-line="295" selection-end-column="49" />
-          <folding />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -964,7 +1060,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -972,7 +1071,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -980,7 +1082,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="62" column="47" lean-forward="false" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -988,7 +1093,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5058">
           <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,7 +1139,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
-          <folding />
+          <folding>
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1012,7 +1150,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4215">
           <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,7 +1196,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
-          <folding />
+          <folding>
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,7 +1207,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4215">
           <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1052,7 +1253,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="44" column="51" lean-forward="true" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
-          <folding />
+          <folding>
+            <element signature="e#3609#3610#0" expanded="true" />
+            <element signature="e#3658#3659#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,7 +1264,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4215">
           <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
-          <folding />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1079,69 +1313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Lib.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="74" column="23" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/machine/Machine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="301" column="28" lean-forward="false" selection-start-line="301" selection-start-column="28" selection-end-line="301" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Interrupt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="116" column="55" lean-forward="false" selection-start-line="116" selection-start-column="47" selection-end-line="116" selection-end-column="55" />
-          <folding>
-            <element signature="e#3446#3447#0" expanded="true" />
-            <element signature="e#3471#3472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="52" column="28" lean-forward="false" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1154,18 +1329,197 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#91089#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="83" column="6" lean-forward="true" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+          <folding>
+            <element signature="e#2293#2294#0" expanded="false" />
+            <element signature="e#2327#2328#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Condition#0" expanded="false" />
+            <element signature="docComment;method#Condition#0;class#Condition#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#Condition#0" expanded="false" />
+            <element signature="docComment;method#wake#0;class#Condition#0" expanded="false" />
+            <element signature="docComment;method#wakeAll#0;class#Condition#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="400" column="42" lean-forward="false" selection-start-line="400" selection-start-column="42" selection-end-line="400" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="107" column="32" lean-forward="true" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+          <folding>
+            <element signature="e#2416#2417#0" expanded="false" />
+            <element signature="e#2454#2455#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Lib.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="486" column="25" lean-forward="true" selection-start-line="486" selection-start-column="25" selection-end-line="486" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="134" column="12" lean-forward="false" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+        <state relative-caret-position="432">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Interrupt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="119" column="23" lean-forward="false" selection-start-line="119" selection-start-column="15" selection-end-line="119" selection-end-column="23" />
+          <folding>
+            <element signature="e#1940#1941#0" expanded="false" />
+            <element signature="e#1962#1963#0" expanded="false" />
+            <element signature="e#2184#2185#0" expanded="false" />
+            <element signature="e#2214#2215#0" expanded="false" />
+            <element signature="e#2444#2445#0" expanded="false" />
+            <element signature="e#2468#2469#0" expanded="false" />
+            <element signature="e#3291#3292#0" expanded="false" />
+            <element signature="e#3313#3314#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="273" column="52" lean-forward="false" selection-start-line="273" selection-start-column="52" selection-end-line="273" selection-end-column="52" />
+        <state relative-caret-position="293">
+          <caret line="250" column="4" lean-forward="false" selection-start-line="250" selection-start-column="4" selection-end-line="250" selection-end-column="4" />
+          <folding>
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;field#flagJoin#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding>
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#2124#2133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
