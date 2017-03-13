@@ -53,5 +53,22 @@ public class Alarm {
             KThread.yield();
 
     }
-//    private static HashMap<long, KThread> ;
+
+    private class longHash{
+        Long x;
+        KThread thread;
+        HashMap<KThread, Long> alarmQueue = new HashMap<KThread, Long>();
+
+        public longHash(KThread thread, long x){
+            this.x = (Long) x;
+            this.thread = thread;
+        }
+
+        public (KThread thead, long x){
+
+        }
+
+
+    }
+
 }
