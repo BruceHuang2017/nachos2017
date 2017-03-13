@@ -48,6 +48,7 @@ public class KThread {
 		}
 		else {
 			readyQueue = ThreadedKernel.scheduler.newThreadQueue(false);
+			joinQueue = ThreadedKernel.scheduler.newThreadQueue(false);
 			readyQueue.acquire(this);
 
 			currentThread = this;
@@ -192,6 +193,10 @@ public class KThread {
 
 
 		currentThread.status = statusFinished;
+		//check joinQueue.
+		KThread thread = joinQueue.nextThread();
+		if (thread != null)
+			thread.ready();
 
 		sleep();
 	}
@@ -272,7 +277,8 @@ public class KThread {
 	 * call is not guaranteed to return. This thread must not be the current
 	 * thread.
 	 */
-	private boolean flagJoin = true;
+//	private boolean flagJoin = true;
+//	private static ThreadQueue joinQueue = null;
 	public void join() {
 		Lib.debug(dbgThread, "Joining to thread: " + toString());
 		Lib.assertTrue(this != currentThread);
@@ -280,19 +286,11 @@ public class KThread {
 		if (this.status == statusFinished) return;
 
 		boolean intStatus = Machine.interrupt().disable();
-		if (!this.flagJoin) ; //already called once.
+		if (!this.flagJoin) ; //already called once. no return.
 
 		this.flagJoin = false; // only call once.
-		readyQueue.waitForAccess(currentThread);
+		joinQueue.waitForAccess(currentThread);
 		sleep();
-
-//		currentThread.saveState();
-//		if (currentThread.status != statusFinished) //sleep
-//			currentThread.status = statusBlocked;
-
-//		currentThread = this; //run
-//		tcb.contextSwitch();
-//		currentThread.restoreState();
 		Machine.interrupt().restore(intStatus);
 
 	}
@@ -463,8 +461,11 @@ public class KThread {
 	private int id = numCreated++;
 	/** Number of times the KThread constructor was called. */
 	private static int numCreated = 0;
+	/** boolean flag to make sure join() method called once only. */
+	private boolean flagJoin = true;
 
 	private static ThreadQueue readyQueue = null;
+	private static ThreadQueue joinQueue = null;
 	private static KThread currentThread = null;
 	private static KThread toBeDestroyed = null;
 	private static KThread idleThread = null;
