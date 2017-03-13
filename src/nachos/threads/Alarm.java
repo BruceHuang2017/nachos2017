@@ -2,7 +2,6 @@ package nachos.threads;
 
 import nachos.machine.*;
 
-import java.util.HashMap;
 
 /**
  * Uses the hardware timer to provide preemption, and to allow threads to sleep
@@ -54,19 +53,7 @@ public class Alarm {
 
     }
 
-    private class longHash{
-        Long x;
-        KThread thread;
-        HashMap<KThread, Long> alarmQueue = new HashMap<KThread, Long>();
 
-        public longHash(KThread thread, long x){
-            this.x = (Long) x;
-            this.thread = thread;
-        }
-
-        public (KThread thead, long x){
-
-        }
 
 
     }
