@@ -2,6 +2,7 @@ package nachos.threads;
 
 import nachos.machine.*;
 
+import java.util.LinkedList;
 import java.util.TreeSet;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -142,8 +143,9 @@ public class PriorityScheduler extends Scheduler {
 
 		public KThread nextThread() {
 			Lib.assertTrue(Machine.interrupt().disabled());
-			// implement me
-			return null;
+			if (pickNextThread() == null)
+				return null;
+			return pickNextThread().thread;
 		}
 
 		/**
@@ -154,13 +156,28 @@ public class PriorityScheduler extends Scheduler {
 		 *		return.
 		 */
 		protected ThreadState pickNextThread() {
-			// implement me
-			return null;
+			if(someQueue.isEmpty())
+				return null;
+
+			ThreadState nextThreadState = new ThreadState();
+			int max = -1;
+			int priority = -1;
+			for (ThreadState w : someQueue) {
+				priority = w.getEffectivePriority();
+				if (priority > max){
+					// not sure could still solve FIFO problem for transfer P.
+					nextThreadState = w;
+					max = priority;
+				}
+			}
+			someQueue.remove(nextThreadState);
+			return nextThreadState;
 		}
 
 		public void print() {
 			Lib.assertTrue(Machine.interrupt().disabled());
-			// implement me (if you want)
+			for (Iterator i=someQueue.iterator(); i.hasNext(); )
+				System.out.print( ((ThreadState) i.next()).thread + " ");
 		}
 
 		/**
@@ -168,6 +185,8 @@ public class PriorityScheduler extends Scheduler {
 		 * threads to the owning thread.
 		 */
 		public boolean transferPriority;
+		public ThreadState theThreadState = null;
+		private LinkedList<ThreadState> someQueue = new LinkedList<>(); // FIFO
 	}
 
 	/**
@@ -178,6 +197,7 @@ public class PriorityScheduler extends Scheduler {
 	 * @see	nachos.threads.KThread#schedulingState
 	 */
 	protected class ThreadState {
+		public ThreadState(){} // default constructor.
 		/**
 		 * Allocate a new <tt>ThreadState</tt> object and associate it with the
 		 * specified thread.
@@ -186,7 +206,6 @@ public class PriorityScheduler extends Scheduler {
 		 */
 		public ThreadState(KThread thread) {
 			this.thread = thread;
-
 			setPriority(priorityDefault);
 		}
 
@@ -205,9 +224,18 @@ public class PriorityScheduler extends Scheduler {
 		 * @return	the effective priority of the associated thread.
 		 */
 		public int getEffectivePriority() {
-			// implement me
-			return priority;
+			this.waitQueue.someQueue.forEach(w -> {
+				if (w.priority>effectivePriority){
+					this.effectivePriority = w.priority;
+				}
+			});
+			return effectivePriority;
 		}
+
+		private void setEffectivePriority(){
+			getEffectivePriority();
+		}
+
 
 		/**
 		 * Set the priority of the associated thread to the specified value.
@@ -215,12 +243,12 @@ public class PriorityScheduler extends Scheduler {
 		 * @param	priority	the new priority.
 		 */
 		public void setPriority(int priority) {
-			if (this.priority == priority)
-				return;
+//			if (this.priority == priority)
+//				return;
 
 			this.priority = priority;
 
-			// implement me
+			// implement me ??
 		}
 
 		/**
@@ -236,7 +264,10 @@ public class PriorityScheduler extends Scheduler {
 		 * @see	nachos.threads.ThreadQueue#waitForAccess
 		 */
 		public void waitForAccess(PriorityQueue waitQueue) {
-			// implement me
+
+			waitQueue.someQueue.add(this);
+			this.waitQueue = waitQueue;
+
 		}
 
 		/**
@@ -250,12 +281,22 @@ public class PriorityScheduler extends Scheduler {
 		 * @see	nachos.threads.ThreadQueue#nextThread
 		 */
 		public void acquire(PriorityQueue waitQueue) {
-			// implement me
+			// works on both lock or next thread.
+			if (waitQueue.transferPriority){
+				this.waitQueue = waitQueue;
+				waitQueue.theThreadState = this;
+				setEffectivePriority();
+			}
+
 		}
 
 		/** The thread with which this object is associated. */
 		protected KThread thread;
 		/** The priority of the associated thread. */
-		protected int priority;
+		protected PriorityQueue waitQueue = null;
+		protected int priority = priorityDefault;
+		protected int effectivePriority = priorityDefault;
+
 	}
+
 }
