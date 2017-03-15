@@ -14,6 +14,7 @@ public class Communicator {
      * Allocate a new communicator.
      */
     public Communicator() {
+
     }
 
     /**
@@ -27,6 +28,7 @@ public class Communicator {
      * @param	word	the integer to transfer.
      */
     public void speak(int word) {
+
     }
 
     /**
@@ -34,8 +36,10 @@ public class Communicator {
      * the <i>word</i> that thread passed to <tt>speak()</tt>.
      *
      * @return	the integer transferred.
-     */    
+     */
     public int listen() {
-	return 0;
+
+        return 0;
     }
+
 }
