@@ -4,7 +4,6 @@ import nachos.machine.*;
 
 import java.util.ArrayList;
 
-
 /**
  * Uses the hardware timer to provide preemption, and to allow threads to sleep
  * until a certain time.
@@ -30,7 +29,16 @@ public class Alarm {
      * that should be run.
      */
     public void timerInterrupt() {
-//        KThread.currentThread().yield();
+        boolean intStatus = Machine.interrupt().disable();
+        if(!alarmList.isEmpty()) {
+            alarmList.forEach(w -> {
+                if (w.wakeUpTime >= Machine.timer().getTime()) {
+                    w.thread.ready();
+                }
+            }); //lambda expression for each.
+        }
+        KThread.yield();
+        Machine.interrupt().restore(intStatus);
 
     }
 
@@ -50,24 +58,28 @@ public class Alarm {
      */
     public void waitUntil(long x) {
         // for now, cheat just to get something working (busy waiting is bad)
-//        long wakeTime = Machine.timer().getTime() + x;
-//        while (wakeTime > Machine.timer().getTime())
-//            KThread.yield();
+        long wakeTime = Machine.timer().getTime() + x;
+        KThread thread = KThread.currentThread();
+        tuple alarmT = new tuple(wakeTime, thread);
+
+        boolean intStatus = Machine.interrupt().disable();
+        if (wakeTime > Machine.timer().getTime()){
+            alarmList.add(alarmT);
+            KThread.sleep();
+        }
+        Machine.interrupt().restore(intStatus);
 
     }
 
     private class tuple{
         long wakeUpTime;
         KThread thread;
-
         public tuple(long wakeUpTime, KThread thread){
             this.wakeUpTime = wakeUpTime;
             this.thread = thread;
         }
 
-
-
     }
 
-    ArrayList<tuple> alarmList = new ArrayList<tuple>();
+    private ArrayList<tuple> alarmList = new ArrayList<>();
 }

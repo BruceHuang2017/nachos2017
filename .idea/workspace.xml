@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Alarm$1.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Alarm$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Alarm.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Alarm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Communicator.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Communicator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" afterPath="$PROJECT_DIR$/src/nachos/threads/Alarm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/Communicator.java" afterPath="$PROJECT_DIR$/src/nachos/threads/Communicator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,24 +36,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Alarm.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="694">
-                  <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1953#1960#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Communicator.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Communicator.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/Communicator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="46">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="352">
+                  <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
                   <folding />
                 </state>
               </provider>
@@ -58,58 +50,34 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+          <file leaf-file-name="Condition.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1980">
-                  <caret line="125" column="48" lean-forward="false" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+                <state relative-caret-position="375">
+                  <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+          <file leaf-file-name="Semaphore.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+                <state relative-caret-position="402">
+                  <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Lock.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
                   <folding>
-                    <element signature="docComment;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#KThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
-                    <element signature="method#KThread#1;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
-                    <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
-                    <element signature="method#setName#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
-                    <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
-                    <element signature="method#fork#0;class#KThread#0" expanded="false" />
-                    <element signature="method#runThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#begin#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
-                    <element signature="method#yield#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-                    <element signature="method#sleep#0;class#KThread#0" expanded="false" />
-                    <element signature="method#ready#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
-                    <element signature="method#join#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
-                    <element signature="method#run#0;class#KThread#0" expanded="false" />
-                    <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
-                    <element signature="method#saveState#0;class#KThread#0" expanded="false" />
-                    <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
-                    <element signature="method#selfTest#0;class#KThread#0" expanded="false" />
+                    <element signature="e#1771#1772#0" expanded="true" />
+                    <element signature="e#1824#1825#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -186,8 +154,8 @@
         <option value="$PROJECT_DIR$/src/nachos/threads/Condition.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/Boat.java" />
         <option value="$PROJECT_DIR$/src/nachos/machine/Timer.java" />
-        <option value="$PROJECT_DIR$/src/nachos/threads/Communicator.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/Alarm.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Communicator.java" />
       </list>
     </option>
   </component>
@@ -737,7 +705,7 @@
       <workItem from="1489373768645" duration="5746000" />
       <workItem from="1489419235035" duration="2520000" />
       <workItem from="1489503288463" duration="405000" />
-      <workItem from="1489539994907" duration="2295000" />
+      <workItem from="1489539994907" duration="9272000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -823,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489542112282</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="tuesday night">
+      <created>1489543017490</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1489543017490</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72946000" />
+    <option name="totallyTimeSpent" value="79923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -845,12 +820,13 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5030628" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29491174" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29430053" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.49693722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -868,7 +844,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -969,7 +944,6 @@
             <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
             <element signature="method#yield#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
             <element signature="method#ready#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
             <element signature="method#join#0;class#KThread#0" expanded="false" />
@@ -993,7 +967,6 @@
           <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1953#1960#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1081,7 +1054,6 @@
             <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
             <element signature="method#yield#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
             <element signature="method#ready#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
             <element signature="method#join#0;class#KThread#0" expanded="false" />
@@ -1142,7 +1114,6 @@
             <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
             <element signature="method#yield#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
             <element signature="method#ready#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
             <element signature="method#join#0;class#KThread#0" expanded="false" />
@@ -1203,7 +1174,6 @@
             <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
             <element signature="method#yield#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
             <element signature="method#ready#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
             <element signature="method#join#0;class#KThread#0" expanded="false" />
@@ -1264,7 +1234,6 @@
             <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
             <element signature="method#yield#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
             <element signature="method#ready#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
             <element signature="method#join#0;class#KThread#0" expanded="false" />
@@ -1344,14 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
-          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Rider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1390,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/ElevatorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1416,13 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1489,10 +1436,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="125" column="48" lean-forward="false" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        <state relative-caret-position="447">
+          <caret line="252" column="24" lean-forward="true" selection-start-line="252" selection-start-column="24" selection-end-line="252" selection-end-column="24" />
           <folding>
             <element signature="docComment;class#KThread#0" expanded="false" />
             <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
@@ -1516,7 +1481,6 @@
             <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
             <element signature="method#yield#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
             <element signature="method#ready#0;class#KThread#0" expanded="false" />
             <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
             <element signature="method#join#0;class#KThread#0" expanded="false" />
@@ -1534,30 +1498,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="true" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding>
+            <element signature="e#1771#1772#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="41" column="22" lean-forward="true" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="85" column="19" lean-forward="true" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Communicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="125" column="48" lean-forward="false" selection-start-line="125" selection-start-column="48" selection-end-line="125" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1953#1960#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
