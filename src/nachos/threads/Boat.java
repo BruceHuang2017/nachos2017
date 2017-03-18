@@ -1,8 +1,6 @@
 package nachos.threads;
 import nachos.ag.BoatGrader;
 
-import java.awt.*;
-import java.awt.event.MouseListener;
 import java.util.LinkedList;
 
 public class Boat
@@ -25,7 +23,7 @@ public class Boat
         someBoat noahsArk = new someBoat(Oahu, Molokai);
 
         for(int i=0; i<adults; i++){
-            Hawaiian hawa = new Adult();
+            Hawaiian hawa = new Adult(Oahu);
             KThread t = new KThread(hawa);
             t.setName("Adult "+i);
             t.fork();
@@ -34,14 +32,13 @@ public class Boat
         }
 
         for(int i=0; i<children; i++){
-            Hawaiian hawa = new Children();
+            Hawaiian hawa = new Children(Oahu);
             KThread t = new KThread(hawa);
             t.setName("Children "+i);
             t.fork();
             childrenInOahu.add(t);
             System.out.println("Fork " + t.getName());
         }
-
 
 
     }
@@ -60,7 +57,6 @@ public class Boat
             this.initialPopulation = initialPopulation;
             this.currentPopulation = initialPopulation;
         }
-
     }
 
     private static class someBoat{
@@ -104,13 +100,23 @@ public class Boat
     }
 
     public static class Adult extends Hawaiian{
+        private Adult(Island born){
+            this.bornin = born;
+            this.currentLocation = born;
+        }
         public int weight = 2;
-
+        Island bornin = null;
+        Island currentLocation = null;
     }
 
     public static class Children extends Hawaiian{
+        private Children(Island born){
+            this.bornin = born;
+            this.currentLocation = born;
+        }
         public int weight = 1;
-
+        Island bornin = null;
+        Island currentLocation = null;
     }
 
 
