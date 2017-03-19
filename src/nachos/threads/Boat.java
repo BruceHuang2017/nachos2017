@@ -1,46 +1,63 @@
 package nachos.threads;
 import nachos.ag.BoatGrader;
+import org.omg.PortableInterceptor.LOCATION_FORWARD;
 
 import java.util.LinkedList;
+import java.util.stream.StreamSupport;
 
 public class Boat
 {
     static BoatGrader bg;
 
-    private static void letBrucePlay( int adults, int children, BoatGrader b ){
-
-        Lock tickets = new Lock();
+    // initial global references
+    private Lock isPlay;
+    private someBoat noahsArk;
+    private Island Oahu;
+    private Island Molokai;
+    private final Island destination = Molokai;
+    private final Island born = Oahu;
+    private Condition childrenOnOahu;
+    private Condition childrenOnMolokai;
+    private Condition adultsOnOahu;
+    private Condition adultsOnMolokai;
+    private Condition hawaiianOnBoat;
+    
+    public void letBrucePlay( int adults, int child, BoatGrader b ){
+        isPlay = new Lock();
 
         //assume hawaiians are all civilized citizens, they wait in line to embark.
-        LinkedList<KThread> childrenInOahu = new LinkedList<>();
-        LinkedList<KThread> childrenInMolokai = new LinkedList<>();
-        LinkedList<KThread> adultInOahu = new LinkedList<>();
-        LinkedList<KThread> adultInMolokai = new LinkedList<>();
+        // childrenOnOahu = new LinkedList<>();
+        // childrenOnMolokai = new LinkedList<>();
+        // adultsOnOahu = new LinkedList<>();
+        // adultsOnMolokai = new LinkedList<>();
+        childrenOnOahu = new Condition(isPlay);
+        childrenOnMolokai = new Condition(isPlay);
+        adultsOnOahu = new Condition(isPlay);
+        adultsOnMolokai = new Condition(isPlay);
+        hawaiianOnBoat = new Condition(isPlay);
 
-        Island Oahu = new Island(adults+children);
-        Island Molokai = new Island(0);
+        Oahu = new Island(adults+child);
+        Molokai = new Island(0);
 
-        someBoat noahsArk = new someBoat(Oahu, Molokai);
+        someBoat noahsArk = new someBoat(born, destination);
 
         for(int i=0; i<adults; i++){
-            Hawaiian hawa = new Adult(Oahu);
+            Hawaiian hawa = new Adult(born);
             KThread t = new KThread(hawa);
             t.setName("Adult "+i);
             t.fork();
-            adultInOahu.add(t);
             System.out.println("Fork " + t.getName());
         }
 
-        for(int i=0; i<children; i++){
-            Hawaiian hawa = new Children(Oahu);
+        for(int i=0; i<child; i++){
+            Hawaiian hawa = new Child(born);
             KThread t = new KThread(hawa);
-            t.setName("Children "+i);
+            t.setName("Child "+i);
             t.fork();
-            childrenInOahu.add(t);
             System.out.println("Fork " + t.getName());
         }
 
-
+        
     }
 
 
@@ -49,7 +66,7 @@ public class Boat
         int numberOfIslandKnown = 2;
     }
 
-    private static class Island implements Hawaii{
+    private class Island implements Hawaii{
         int initialPopulation;
         int currentPopulation;
         public Island(){}
@@ -59,7 +76,7 @@ public class Boat
         }
     }
 
-    private static class someBoat{
+    public class someBoat{
         public someBoat(){
         }
         private someBoat(Island made, Island dst){
@@ -83,39 +100,58 @@ public class Boat
         boolean isFull(someBoat a){
             return a.currentWeight == weightLimit;
         }
+        boolean isOnBoat(Hawaiian a){
+            return a == passenger || a == pilot;
+        }
+        boolean isPilot(Hawaiian a){
+            return a == pilot;
+        }
+        boolean isPassenger(Hawaiian a){
+            return a == passenger;
+        }
 
     }
 
+    public abstract class Hawaiian implements Runnable{
 
-    public static abstract class Hawaiian implements Runnable{
+        Island born;
+        Island currentLocation;
+        abstract
 
         public void run(){
+            isPlay.acquire();
 
+            if(){
+
+            }
+
+
+            isPlay.release();
         }
 
-        void debug(){
-
+        void debug(String a){
+            System.out.println(KThread.currentThread().getName() + ": " + a);
         }
 
     }
 
-    public static class Adult extends Hawaiian{
+    public class Adult extends Hawaiian{
         private Adult(Island born){
-            this.bornin = born;
+            this.born = born;
             this.currentLocation = born;
         }
         public int weight = 2;
-        Island bornin = null;
+        Island born = null;
         Island currentLocation = null;
     }
 
-    public static class Children extends Hawaiian{
-        private Children(Island born){
-            this.bornin = born;
+    public class Child extends Hawaiian{
+        private Child(Island born){
+            this.born = born;
             this.currentLocation = born;
         }
         public int weight = 1;
-        Island bornin = null;
+        Island born = null;
         Island currentLocation = null;
     }
 
@@ -124,15 +160,15 @@ public class Boat
     public static void selfTest() {
         BoatGrader b = new BoatGrader();
 
-        System.out.println("\n ***Testing Boats with only 2 children***");
+        System.out.println("\n ***Testing Boats with only 3 child***");
         begin(789, 3, b);
 
     }
 
 
-    public static void begin( int adults, int children, BoatGrader b ) {
+    public static void begin( int adults, int child, BoatGrader b ) {
         // Store the externally generated autograder in a class
-        // variable to be accessible by children.
+        // variable to be accessible by child.
         bg = b;
 
         // Instantiate global variables here
@@ -148,8 +184,8 @@ public class Boat
         KThread t = new KThread(r);
         t.setName("Sample Boat Thread");
         t.fork();
-
-        letBrucePlay(adults, children, b);
+        Boat werido = new Boat();
+        werido.letBrucePlay(adults, child, b);
 
     }
 
