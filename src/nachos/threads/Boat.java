@@ -83,6 +83,7 @@ public class Boat
             this.currentLocation = made;
             this.weightLimit = weightLimit;
         }
+
         Hawaiian passenger = null;
         Hawaiian pilot = null;
         int weightLimit = 2;
@@ -90,6 +91,8 @@ public class Boat
         Island made;
         Island dst;
         Island currentLocation;
+        boolean arrived;
+
         boolean isEmpty(){
             return noahsArk.currentWeight == 0;
         }
@@ -112,10 +115,10 @@ public class Boat
             currentWeight = 0;
             passenger = null;
             pilot = null;
+            arrived = true;
         }
 
         void depart(Island from, Island to){
-            if (from == to) return; // should never happen
             isPlay.acquire();
             if (from == this.currentLocation && !isEmpty()){
                 this.currentLocation = to;
@@ -124,27 +127,41 @@ public class Boat
                     // always wake up and off the boat, sleep on M
                     Oahu.currentAdults --;
                     Molokai.currentAdults ++;
-                    ((Adult) pilot).setCurrentLocation(to);
+
+                    pilot.setCurrentLocation(to);
+                    bg.AdultRowToMolokai();
                     adultsOnMolokai.sleep();
+
                     clearBoat();
+                    childrenOnMolokai.wake(); //child need to row back
                 }else if (passenger != null){
                     // must from O to M
                     // passenger sleep on boat, and pilot is current thread.
                     Oahu.currentChildern = Oahu.currentChildern - 2;
                     Molokai.currentChildern = Molokai.currentChildern + 2;
-                    pilot.currentLocation = to;
+
+                    pilot.setCurrentLocation(to);
+                    bg.ChildRowToMolokai();
                     childrenOnMolokai.sleep();
+
                     passengerOnBoat.wake();
-                    passenger.currentLocation = to;
+                    passenger.setCurrentLocation(to);
+                    bg.ChildRideToMolokai();
                     childrenOnMolokai.sleep();
+
                     clearBoat();
+                    if (Oahu.initialPopulation == Molokai.getCurrentPopulation()) return; // finished
+                    if (Oahu.currentAdults != 0) childrenOnMolokai.wake(); // on board and back
+
                 }else{
                     // must from M to O, 1 pilot 0 passenger, child
-                    if (from != Molokai) return; // should never happen
                     Molokai.currentChildern --;
                     Oahu.currentChildern ++;
-                    pilot.currentLocation = to;
+
+                    pilot.setCurrentLocation(to);
+                    bg.ChildRowToOahu();
                     childrenOnOahu.sleep();
+
                     clearBoat();
                 }
             }
@@ -181,27 +198,28 @@ public class Boat
     public abstract class Hawaiian implements Runnable{
 
         Island born = Oahu;
-        Island currentLocation;
         final Island targetLocation = Molokai;
         abstract void bookTicket();
+        abstract public Island getCurrentLocation();
+        abstract public void setCurrentLocation(Island currentLocation);
+
         public void run(){
             isPlay.acquire();
             while (true){
-                if (Oahu.initialPopulation == Molokai.getCurrentPopulation()) return; // finished
-                if (this.currentLocation == noahsArk.currentLocation && noahsArk.canEmbark())
 
+                if (noahsArk.isOnBoat(this)){
+
+                }else {
                     bookTicket();
 
+                }
             }
-        }
-
-        void debug(String a){
-            System.out.println(KThread.currentThread().getName() + ": " + a);
         }
 
     }
 
     public class Adult extends Hawaiian{
+
         private Adult(Island born){
             this.born = born;
             this.setCurrentLocation(born);
@@ -212,7 +230,8 @@ public class Boat
 
         @Override
         void bookTicket(){
-            if(noahsArk.isEmpty()){
+            if(noahsArk.isEmpty() && Molokai.currentChildern>0){
+
                 noahsArk.onBoard(this);
                 // bc i am pilot
                 isPlay.release();
@@ -223,20 +242,22 @@ public class Boat
                 adultsOnOahu.sleep();
                 isPlay.release();
             }
-
         }
 
-
+        @Override
         public Island getCurrentLocation() {
             return currentLocation;
         }
-
+        @Override
         public void setCurrentLocation(Island currentLocation) {
             this.currentLocation = currentLocation;
         }
     }
 
     public class Child extends Hawaiian{
+        private Child(){
+            super();
+        }
         private Child(Island born){
             this.born = born;
             this.currentLocation = born;
@@ -268,6 +289,14 @@ public class Boat
 
             }
 
+        }
+        @Override
+        public Island getCurrentLocation() {
+            return currentLocation;
+        }
+        @Override
+        public void setCurrentLocation(Island currentLocation) {
+            this.currentLocation = currentLocation;
         }
 
     }

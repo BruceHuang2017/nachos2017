@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat$1.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/Boat.java" afterPath="$PROJECT_DIR$/src/nachos/threads/Boat.java" />
     </list>
@@ -38,27 +41,33 @@
           <file leaf-file-name="Boat.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="581">
-                  <caret line="192" column="20" lean-forward="false" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
+                <state relative-caret-position="172">
+                  <caret line="135" column="64" lean-forward="false" selection-start-line="135" selection-start-column="64" selection-end-line="135" selection-end-column="64" />
                   <folding>
                     <element signature="e#2170#2171#0" expanded="true" />
                     <element signature="e#2232#2233#0" expanded="true" />
-                    <element signature="e#2750#2751#0" expanded="true" />
-                    <element signature="e#2808#2809#0" expanded="true" />
-                    <element signature="e#2837#2838#0" expanded="true" />
-                    <element signature="e#2905#2906#0" expanded="true" />
-                    <element signature="e#2931#2932#0" expanded="true" />
-                    <element signature="e#2999#3000#0" expanded="true" />
-                    <element signature="e#3042#3043#0" expanded="true" />
-                    <element signature="e#3111#3112#0" expanded="true" />
-                    <element signature="e#3153#3154#0" expanded="true" />
-                    <element signature="e#3199#3200#0" expanded="true" />
-                    <element signature="e#3245#3246#0" expanded="true" />
-                    <element signature="e#3295#3296#0" expanded="true" />
-                    <element signature="e#7297#7298#0" expanded="true" />
-                    <element signature="e#7343#7344#0" expanded="true" />
-                    <element signature="e#7409#7410#0" expanded="true" />
-                    <element signature="e#7471#7472#0" expanded="true" />
+                    <element signature="e#2777#2778#0" expanded="true" />
+                    <element signature="e#2835#2836#0" expanded="true" />
+                    <element signature="e#2864#2865#0" expanded="true" />
+                    <element signature="e#2932#2933#0" expanded="true" />
+                    <element signature="e#2958#2959#0" expanded="true" />
+                    <element signature="e#3026#3027#0" expanded="true" />
+                    <element signature="e#3069#3070#0" expanded="true" />
+                    <element signature="e#3138#3139#0" expanded="true" />
+                    <element signature="e#3180#3181#0" expanded="true" />
+                    <element signature="e#3226#3227#0" expanded="true" />
+                    <element signature="e#3272#3273#0" expanded="true" />
+                    <element signature="e#3322#3323#0" expanded="true" />
+                    <element signature="e#7588#7589#0" expanded="true" />
+                    <element signature="e#7634#7635#0" expanded="true" />
+                    <element signature="e#7717#7718#0" expanded="true" />
+                    <element signature="e#7779#7780#0" expanded="true" />
+                    <element signature="e#7852#7853#0" expanded="true" />
+                    <element signature="e#7883#7884#0" expanded="true" />
+                    <element signature="e#9004#9005#0" expanded="true" />
+                    <element signature="e#9050#9051#0" expanded="true" />
+                    <element signature="e#9133#9134#0" expanded="true" />
+                    <element signature="e#9195#9196#0" expanded="true" />
                     <element signature="method#AdultItinerary#0;class#Boat#0" expanded="false" />
                     <element signature="method#ChildItinerary#0;class#Boat#0" expanded="false" />
                   </folding>
@@ -70,12 +79,37 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Condition.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BoatGrader.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/ag/BoatGrader.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                  <folding>
+                    <element signature="docComment;method#ChildRowToMolokai#0;class#BoatGrader#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Condition.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
-                  <caret line="102" column="44" lean-forward="true" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+                <state relative-caret-position="590">
+                  <caret line="97" column="50" lean-forward="true" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Semaphore.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="379">
+                  <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+                  <folding>
+                    <element signature="class#PingTest#0;class#Semaphore#0" expanded="false" />
+                    <element signature="method#selfTest#0;class#Semaphore#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -724,7 +758,7 @@
       <workItem from="1489850113289" duration="10032000" />
       <workItem from="1489900277583" duration="737000" />
       <workItem from="1489934710576" duration="3207000" />
-      <workItem from="1489987119540" duration="10572000" />
+      <workItem from="1489987119540" duration="15333000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -852,11 +886,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489946942752</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="before sunset">
+      <created>1490056109789</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1490056109789</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145148000" />
+    <option name="totallyTimeSpent" value="149909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -956,7 +997,8 @@
     <MESSAGE value="time to wake up and keep working on this project." />
     <MESSAGE value="weired import" />
     <MESSAGE value="before go to cha" />
-    <option name="LAST_COMMIT_MESSAGE" value="before go to cha" />
+    <MESSAGE value="before sunset" />
+    <option name="LAST_COMMIT_MESSAGE" value="before sunset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1497,18 +1539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/ag/BoatGrader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="43" column="16" lean-forward="false" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="docComment;method#ChildRowToMolokai#0;class#BoatGrader#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="false" />
-            <element signature="e#1651#1652#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Cat.java" />
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/SynchList.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1535,17 +1565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="266" column="13" lean-forward="false" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="102" column="46" lean-forward="false" selection-start-line="102" selection-start-column="46" selection-end-line="102" selection-end-column="46" />
-          <folding>
-            <element signature="class#PingTest#0;class#Semaphore#0" expanded="false" />
-            <element signature="method#selfTest#0;class#Semaphore#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1662,37 +1681,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/ag/BoatGrader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#ChildRowToMolokai#0;class#BoatGrader#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="102" column="44" lean-forward="true" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
+        <state relative-caret-position="590">
+          <caret line="97" column="50" lean-forward="true" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="class#PingTest#0;class#Semaphore#0" expanded="false" />
+            <element signature="method#selfTest#0;class#Semaphore#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="192" column="20" lean-forward="false" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
+        <state relative-caret-position="172">
+          <caret line="135" column="64" lean-forward="false" selection-start-line="135" selection-start-column="64" selection-end-line="135" selection-end-column="64" />
           <folding>
             <element signature="e#2170#2171#0" expanded="true" />
             <element signature="e#2232#2233#0" expanded="true" />
-            <element signature="e#2750#2751#0" expanded="true" />
-            <element signature="e#2808#2809#0" expanded="true" />
-            <element signature="e#2837#2838#0" expanded="true" />
-            <element signature="e#2905#2906#0" expanded="true" />
-            <element signature="e#2931#2932#0" expanded="true" />
-            <element signature="e#2999#3000#0" expanded="true" />
-            <element signature="e#3042#3043#0" expanded="true" />
-            <element signature="e#3111#3112#0" expanded="true" />
-            <element signature="e#3153#3154#0" expanded="true" />
-            <element signature="e#3199#3200#0" expanded="true" />
-            <element signature="e#3245#3246#0" expanded="true" />
-            <element signature="e#3295#3296#0" expanded="true" />
-            <element signature="e#7297#7298#0" expanded="true" />
-            <element signature="e#7343#7344#0" expanded="true" />
-            <element signature="e#7409#7410#0" expanded="true" />
-            <element signature="e#7471#7472#0" expanded="true" />
+            <element signature="e#2777#2778#0" expanded="true" />
+            <element signature="e#2835#2836#0" expanded="true" />
+            <element signature="e#2864#2865#0" expanded="true" />
+            <element signature="e#2932#2933#0" expanded="true" />
+            <element signature="e#2958#2959#0" expanded="true" />
+            <element signature="e#3026#3027#0" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3138#3139#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#3226#3227#0" expanded="true" />
+            <element signature="e#3272#3273#0" expanded="true" />
+            <element signature="e#3322#3323#0" expanded="true" />
+            <element signature="e#7588#7589#0" expanded="true" />
+            <element signature="e#7634#7635#0" expanded="true" />
+            <element signature="e#7717#7718#0" expanded="true" />
+            <element signature="e#7779#7780#0" expanded="true" />
+            <element signature="e#7852#7853#0" expanded="true" />
+            <element signature="e#7883#7884#0" expanded="true" />
+            <element signature="e#9004#9005#0" expanded="true" />
+            <element signature="e#9050#9051#0" expanded="true" />
+            <element signature="e#9133#9134#0" expanded="true" />
+            <element signature="e#9195#9196#0" expanded="true" />
             <element signature="method#AdultItinerary#0;class#Boat#0" expanded="false" />
             <element signature="method#ChildItinerary#0;class#Boat#0" expanded="false" />
           </folding>
