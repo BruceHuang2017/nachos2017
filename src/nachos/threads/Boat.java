@@ -1,403 +1,71 @@
 package nachos.threads;
 import nachos.ag.BoatGrader;
-import org.omg.CORBA.ObjectHelper;
 
 public class Boat
 {
     static BoatGrader bg;
-
-    // initial global references
-    private Lock boatLock;
-    private someBoat noahsArk;
-    private Island Oahu;
-    private Island Molokai;
-    private final Island destination = Molokai;
-    private final Island born = Oahu;
-    private Condition childrenOnOahu;
-    private Condition childrenOnMolokai;
-    private Condition adultsOnOahu;
-    private Condition adultsOnMolokai;
-    private Condition passengerOnBoat;
     
-    public void letBrucePlay( int adults, int child, BoatGrader b ){
-        boatLock = new Lock();
+    public static void selfTest()
+    {
+	BoatGrader b = new BoatGrader();
+	
+	System.out.println("\n ***Testing Boats with only 2 children***");
+	begin(0, 2, b);
 
-        childrenOnOahu = new Condition(boatLock); // will eventually leave island
-        childrenOnMolokai = new Condition(boatLock); // might need to back
-        adultsOnOahu = new Condition(boatLock);  // will be considered firstly
-        adultsOnMolokai = new Condition(boatLock); // finish, never need lock
-        passengerOnBoat = new Condition(boatLock);
+//	System.out.println("\n ***Testing Boats with 2 children, 1 adult***");
+//  	begin(1, 2, b);
 
-        Oahu = new Island(adults, child);
-        Oahu.currentAdults = adults;
-        Oahu.currentChildern = child;
-        Molokai = new Island(0, 0);
-
-        someBoat noahsArk = new someBoat(born, destination, 2);
-
-        for(int i=0; i<adults; i++){
-            Hawaiian hawa = new Adult(born);
-            KThread t = new KThread(hawa);
-            t.setName("Adult "+i);
-            t.fork();
-            System.out.println("Fork " + t.getName());
-        }
-
-        for(int i=0; i<child; i++){
-            Hawaiian hawa = new Child(born);
-            KThread t = new KThread(hawa);
-            t.setName("Child "+i);
-            t.fork();
-            System.out.println("Fork " + t.getName());
-        }
-
-        
+//  	System.out.println("\n ***Testing Boats with 3 children, 3 adults***");
+//  	begin(3, 3, b);
     }
 
+    public static void begin( int adults, int children, BoatGrader b )
+    {
+	// Store the externally generated autograder in a class
+	// variable to be accessible by children.
+	bg = b;
 
+	// Instantiate global variables here
+	
+	// Create threads here. See section 3.4 of the Nachos for Java
+	// Walkthrough linked from the projects page.
 
-    private interface Hawaii{
-        int numberOfIslandKnown = 2;
-    }
-
-    private class Island implements Hawaii{
-        int initialPopulation;
-        int currentChildern;
-        int currentAdults;
-        public Island(){}
-        private Island(int adults, int child){
-            currentChildern = child;
-            currentAdults = adults;
-            this.initialPopulation = adults + child;
-        }
-        private int getCurrentPopulation(){
-            return currentAdults + currentChildern;
-        }
-    }
-
-    public class someBoat{
-        public someBoat(){
-        }
-        private someBoat(Island made, Island dst, int weightLimit){
-            this.made = made;
-            this.dst = dst;
-            this.currentLocation = made;
-            this.weightLimit = weightLimit;
-        }
-
-        Hawaiian passenger = null;
-        Hawaiian pilot = null;
-        int weightLimit = 2;
-        int currentWeight = 0;
-        Island made;
-        Island dst;
-        Island currentLocation;
-        boolean arrived;
-
-        boolean isEmpty(){
-            return noahsArk.currentWeight == 0;
-        }
-        boolean canEmbark(){
-            return noahsArk.currentWeight != weightLimit;
-        }
-        boolean isFull(){
-            return noahsArk.currentWeight == weightLimit;
-        }
-        boolean isOnBoat(Hawaiian person){
-            return person == passenger || person == pilot;
-        }
-        boolean isPilot(Hawaiian person){
-            return person == pilot;
-        }
-        boolean isPassenger(Hawaiian person){
-            return person == passenger;
-        }
-        void clearBoat(){
-            currentWeight = 0;
-            passenger = null;
-            pilot = null;
-            arrived = true;
-        }
-
-        void depart(Island from, Island to){
-            boatLock.acquire();
-            if (from == this.currentLocation && !isEmpty()){
-                this.currentLocation = to;
-                if(pilot instanceof Adult){
-                    // must from O to M
-                    // always wake up and off the boat, sleep on M
-                    Oahu.currentAdults --;
-                    Molokai.currentAdults ++;
-
-                    pilot.setCurrentLocation(to);
-                    bg.AdultRowToMolokai();
-                    adultsOnMolokai.sleep();
-                    //boatLock.release();
-
-                    clearBoat();
-
-                    //boatLock.acquire();
-                    childrenOnMolokai.wake(); //child need to row back
-
-                }else if (passenger != null){
-                    // must from O to M
-                    // passenger sleep on boat, and pilot is current thread.
-                    Oahu.currentChildern = Oahu.currentChildern - 2;
-                    Molokai.currentChildern = Molokai.currentChildern + 2;
-
-                    pilot.setCurrentLocation(to);
-                    bg.ChildRowToMolokai();
-                    childrenOnMolokai.sleep();
-                    //boatLock.release();
-
-                    //boatLock.acquire();
-                    passengerOnBoat.wake();
-                    passenger.setCurrentLocation(to);
-                    bg.ChildRideToMolokai();
-                    childrenOnMolokai.sleep();
-                    //boatLock.release();
-
-                    clearBoat();
-
-                    if (Oahu.initialPopulation == Molokai.getCurrentPopulation()) return; // finished
-
-                    //boatLock.acquire();
-                    childrenOnMolokai.wake(); // on board and back
-
-                }else{
-                    // must from M to O, 1 pilot 0 passenger, child
-                    Molokai.currentChildern --;
-                    Oahu.currentChildern ++;
-
-                    pilot.setCurrentLocation(to);
-                    bg.ChildRowToOahu();
-                    childrenOnOahu.sleep();
-                    //boatLock.release();
-
-                    clearBoat();
-                    if (Oahu.currentAdults != 0 && Molokai.currentChildern > 0)
-                    {
-                        //boatLock.acquire();
-                        adultsOnOahu.wake();
-                    }
-                    else {
-                        //boatLock.acquire();
-                        childrenOnOahu.wake();
-                    }
-                }
-            }
-            boatLock.release();
-        }
-
-        void onBoard(Hawaiian person){
-            if(person instanceof Adult){
-                // has to from O to M, will wake up all the time.
-                if (currentLocation != Oahu) currentLocation = Oahu;
-                this.pilot = person;
-                this.passenger = person;
-                currentWeight += ((Adult) person).weight; // 2
-
-            }else if(passenger == null) {
-                this.passenger = person;
-                passengerOnBoat.sleep();
-                currentWeight += ((Child) person).weight; // 1
-
-            }else if(pilot == null){
-                this.pilot = person;
-                currentWeight += ((Child) person).weight; // 2
-            }
-        }
-
-        void ppSwitch(){
-            Hawaiian a = passenger;
-            passenger = pilot;
-            pilot = a;
-        }
-
-    }
-
-    public abstract class Hawaiian implements Runnable{
-
-        Island born = Oahu;
-        final Island targetLocation = Molokai;
-        abstract void bookTicket();
-        abstract public Island getCurrentLocation();
-        abstract public void setCurrentLocation(Island currentLocation);
-
-        public void run(){
-            boatLock.acquire();
-            while (true){
-                if (this.getCurrentLocation() == noahsArk.currentLocation)
-                    bookTicket();
-                else if(this.getCurrentLocation() == Oahu) {
-                    if (this instanceof Adult)
-                        adultsOnOahu.sleep();
-                    else childrenOnOahu.sleep();
-                }
-                else if(this.getCurrentLocation() == Molokai) {
-                    if (this instanceof Adult)
-                        adultsOnMolokai.sleep();
-                    else childrenOnMolokai.sleep();
-                }
-            }
-        }
-
-    }
-
-    public class Adult extends Hawaiian{
-
-        private Adult(Island born){
-            this.born = born;
-            this.setCurrentLocation(born);
-        }
-        public int weight = 2;
-        Island born = null;
-        private Island currentLocation = null;
-
-        @Override
-        void bookTicket(){
-            if(noahsArk.isEmpty() && Molokai.currentChildern>0){
-
-                noahsArk.onBoard(this);
-                // bc i am pilot
-                boatLock.release();
-                noahsArk.depart(getCurrentLocation(), targetLocation);
-
-            }else{
-                // not able to embark
-                adultsOnOahu.sleep();
-                boatLock.release();
-
-                if (noahsArk.canEmbark()) {
-                    boatLock.acquire();
-                    childrenOnOahu.wake();
-                }
-            }
-        }
-
-        @Override
-        public Island getCurrentLocation() {
-            return currentLocation;
-        }
-        @Override
-        public void setCurrentLocation(Island currentLocation) {
-            this.currentLocation = currentLocation;
-        }
-    }
-
-    public class Child extends Hawaiian{
-        private Child(){
-            super();
-        }
-        private Child(Island born){
-            this.born = born;
-            this.currentLocation = born;
-        }
-        public int weight = 1;
-        Island born = null;
-        Island currentLocation = null;
-
-        @Override
-        void bookTicket(){
-            if(this.currentLocation == Oahu){
-                // make sure two children on board
-
-                if (noahsArk.isEmpty()){
-                    noahsArk.onBoard(this);
-                    boatLock.release();
-                }
-                else if(noahsArk.canEmbark()) {
-                    boatLock.acquire();
-                    childrenOnOahu.wake();
-                }
-                else {
-                    boatLock.release();
-                    noahsArk.depart(currentLocation, Molokai);
-                }
-
-            }else{
-                // only one child back to O, current Location == Molokai
-                noahsArk.onBoard(this);
-                if(noahsArk.isPassenger(this) && noahsArk.canEmbark()){
-                    noahsArk.ppSwitch(); // make sure pilot is in position
-                    boatLock.release();
-                    noahsArk.depart(currentLocation, Oahu);
-
-                }
-
-            }
-
-        }
-        @Override
-        public Island getCurrentLocation() {
-            return currentLocation;
-        }
-        @Override
-        public void setCurrentLocation(Island currentLocation) {
-            this.currentLocation = currentLocation;
-        }
-
-    }
-
-
-
-    public static void selfTest() {
-        BoatGrader b = new BoatGrader();
-
-        System.out.println("\n ***Testing Boats with only 3 child***");
-        begin(789, 3, b);
-
-    }
-
-
-    public static void begin( int adults, int child, BoatGrader b ) {
-        // Store the externally generated autograder in a class
-        // variable to be accessible by child.
-        bg = b;
-
-        // Instantiate global variables here
-
-        // Create threads here. See section 3.4 of the Nachos for Java
-        // Walkthrough linked from the projects page.
-
-        Runnable r = new Runnable() {
-            public void run() {
+	Runnable r = new Runnable() {
+	    public void run() {
                 SampleItinerary();
             }
         };
         KThread t = new KThread(r);
         t.setName("Sample Boat Thread");
         t.fork();
-        Boat werido = new Boat();
-        werido.letBrucePlay(adults, child, b);
 
     }
 
-    static void AdultItinerary() {
+    static void AdultItinerary()
+    {
 	/* This is where you should put your solutions. Make calls
 	   to the BoatGrader to show that it is synchronized. For
 	   example:
 	       bg.AdultRowToMolokai();
 	   indicates that an adult has rowed the boat across to Molokai
 	*/
+    }
+
+    static void ChildItinerary(){
 
     }
 
-    static void ChildItinerary() {
-
+    static void SampleItinerary()
+    {
+	// Please note that this isn't a valid solution (you can't fit
+	// all of them on the boat). Please also note that you may not
+	// have a single thread calculate a solution and then just play
+	// it back at the autograder -- you will be caught.
+	System.out.println("\n ***Everyone piles on the boat and goes to Molokai***");
+	bg.AdultRowToMolokai();
+	bg.ChildRideToMolokai();
+	bg.AdultRideToMolokai();
+	bg.ChildRideToMolokai();
     }
-
-    static void SampleItinerary() {
-        // Please note that this isn't a valid solution (you can't fit
-        // all of them on the boat). Please also note that you may not
-        // have a single thread calculate a solution and then just play
-        // it back at the autograder -- you will be caught.
-
-        System.out.println("\n ***Everyone piles on the boat and goes to Molokai***");
-        bg.AdultRowToMolokai();
-        bg.ChildRideToMolokai();
-        bg.AdultRideToMolokai();
-        bg.ChildRideToMolokai();
-    }
-
+    
 }
