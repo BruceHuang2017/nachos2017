@@ -1,5 +1,6 @@
 package nachos.threads;
 import nachos.ag.BoatGrader;
+import org.omg.CORBA.ObjectHelper;
 
 public class Boat
 {
@@ -131,9 +132,13 @@ public class Boat
                     pilot.setCurrentLocation(to);
                     bg.AdultRowToMolokai();
                     adultsOnMolokai.sleep();
+                    //isPlay.release();
 
                     clearBoat();
+
+                    //isPlay.acquire();
                     childrenOnMolokai.wake(); //child need to row back
+
                 }else if (passenger != null){
                     // must from O to M
                     // passenger sleep on boat, and pilot is current thread.
@@ -143,15 +148,21 @@ public class Boat
                     pilot.setCurrentLocation(to);
                     bg.ChildRowToMolokai();
                     childrenOnMolokai.sleep();
+                    //isPlay.release();
 
+                    //isPlay.acquire();
                     passengerOnBoat.wake();
                     passenger.setCurrentLocation(to);
                     bg.ChildRideToMolokai();
                     childrenOnMolokai.sleep();
+                    //isPlay.release();
 
                     clearBoat();
+
                     if (Oahu.initialPopulation == Molokai.getCurrentPopulation()) return; // finished
-                    if (Oahu.currentAdults != 0) childrenOnMolokai.wake(); // on board and back
+
+                    //isPlay.acquire();
+                    childrenOnMolokai.wake(); // on board and back
 
                 }else{
                     // must from M to O, 1 pilot 0 passenger, child
@@ -161,8 +172,18 @@ public class Boat
                     pilot.setCurrentLocation(to);
                     bg.ChildRowToOahu();
                     childrenOnOahu.sleep();
+                    //isPlay.release();
 
                     clearBoat();
+                    if (Oahu.currentAdults != 0 && Molokai.currentChildern > 0)
+                    {
+                        //isPlay.acquire();
+                        adultsOnOahu.wake();
+                    }
+                    else {
+                        //isPlay.acquire();
+                        childrenOnOahu.wake();
+                    }
                 }
             }
             isPlay.release();
@@ -207,12 +228,7 @@ public class Boat
             isPlay.acquire();
             while (true){
 
-                if (noahsArk.isOnBoat(this)){
-
-                }else {
-                    bookTicket();
-
-                }
+                bookTicket();
             }
         }
 
@@ -241,6 +257,11 @@ public class Boat
                 // not able to embark
                 adultsOnOahu.sleep();
                 isPlay.release();
+
+                if (noahsArk.canEmbark()) {
+                    isPlay.acquire();
+                    childrenOnOahu.wake();
+                }
             }
         }
 
@@ -270,18 +291,25 @@ public class Boat
         void bookTicket(){
             if(currentLocation == Oahu){
                 // make sure two children on board
-                noahsArk.onBoard(this);
-                if(noahsArk.canEmbark() && noahsArk.isPassenger(this)) isPlay.release();
-                if(noahsArk.isFull() && noahsArk.isPilot(this)) {
+
+                if (noahsArk.isEmpty()){
+                    noahsArk.onBoard(this);
+                    isPlay.release();
+                }
+                else if(noahsArk.canEmbark()) {
+                    isPlay.acquire();
+                    childrenOnOahu.wake();
+                }
+                else {
                     isPlay.release();
                     noahsArk.depart(currentLocation, Molokai);
                 }
 
-            }else if(currentLocation == Molokai){
-                // only one child back to O
+            }else{
+                // only one child back to O, current Location == Molokai
                 noahsArk.onBoard(this);
                 if(noahsArk.isPassenger(this) && noahsArk.canEmbark()){
-                    noahsArk.ppSwitch();
+                    noahsArk.ppSwitch(); // make sure pilot is in position
                     isPlay.release();
                     noahsArk.depart(currentLocation, Oahu);
 
