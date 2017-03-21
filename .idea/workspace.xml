@@ -38,34 +38,34 @@
           <file leaf-file-name="Boat.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="100">
-                  <caret line="234" column="5" lean-forward="true" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
+                <state relative-caret-position="89">
+                  <caret line="213" column="22" lean-forward="true" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#2205#2206#0" expanded="true" />
-                    <element signature="e#2267#2268#0" expanded="true" />
-                    <element signature="e#2812#2813#0" expanded="true" />
-                    <element signature="e#2870#2871#0" expanded="true" />
-                    <element signature="e#2899#2900#0" expanded="true" />
-                    <element signature="e#2967#2968#0" expanded="true" />
-                    <element signature="e#2993#2994#0" expanded="true" />
-                    <element signature="e#3061#3062#0" expanded="true" />
-                    <element signature="e#3104#3105#0" expanded="true" />
-                    <element signature="e#3173#3174#0" expanded="true" />
-                    <element signature="e#3215#3216#0" expanded="true" />
-                    <element signature="e#3261#3262#0" expanded="true" />
-                    <element signature="e#3307#3308#0" expanded="true" />
-                    <element signature="e#3357#3358#0" expanded="true" />
-                    <element signature="e#8281#8282#0" expanded="true" />
-                    <element signature="e#8327#8328#0" expanded="true" />
-                    <element signature="e#8410#8411#0" expanded="true" />
-                    <element signature="e#8472#8473#0" expanded="true" />
-                    <element signature="e#8545#8546#0" expanded="true" />
-                    <element signature="e#8576#8577#0" expanded="true" />
-                    <element signature="e#9846#9847#0" expanded="true" />
-                    <element signature="e#9892#9893#0" expanded="true" />
-                    <element signature="e#9975#9976#0" expanded="true" />
-                    <element signature="e#10037#10038#0" expanded="true" />
+                    <element signature="e#2219#2220#0" expanded="true" />
+                    <element signature="e#2281#2282#0" expanded="true" />
+                    <element signature="e#2826#2827#0" expanded="true" />
+                    <element signature="e#2884#2885#0" expanded="true" />
+                    <element signature="e#2913#2914#0" expanded="true" />
+                    <element signature="e#2981#2982#0" expanded="true" />
+                    <element signature="e#3007#3008#0" expanded="true" />
+                    <element signature="e#3075#3076#0" expanded="true" />
+                    <element signature="e#3118#3119#0" expanded="true" />
+                    <element signature="e#3187#3188#0" expanded="true" />
+                    <element signature="e#3229#3230#0" expanded="true" />
+                    <element signature="e#3275#3276#0" expanded="true" />
+                    <element signature="e#3321#3322#0" expanded="true" />
+                    <element signature="e#3371#3372#0" expanded="true" />
+                    <element signature="e#8854#8855#0" expanded="true" />
+                    <element signature="e#8900#8901#0" expanded="true" />
+                    <element signature="e#8983#8984#0" expanded="true" />
+                    <element signature="e#9045#9046#0" expanded="true" />
+                    <element signature="e#9118#9119#0" expanded="true" />
+                    <element signature="e#9149#9150#0" expanded="true" />
+                    <element signature="e#10432#10433#0" expanded="true" />
+                    <element signature="e#10478#10479#0" expanded="true" />
+                    <element signature="e#10561#10562#0" expanded="true" />
+                    <element signature="e#10623#10624#0" expanded="true" />
                     <element signature="method#AdultItinerary#0;class#Boat#0" expanded="false" />
                     <element signature="method#ChildItinerary#0;class#Boat#0" expanded="false" />
                   </folding>
@@ -77,6 +77,65 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="162">
+                  <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+                  <folding>
+                    <element signature="docComment;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+                    <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+                    <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+                    <element signature="method#setName#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+                    <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+                    <element signature="method#fork#0;class#KThread#0" expanded="false" />
+                    <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#begin#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+                    <element signature="method#finish#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+                    <element signature="method#yield#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+                    <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+                    <element signature="method#ready#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
+                    <element signature="method#join#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+                    <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+                    <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+                    <element signature="method#run#0;class#KThread#0" expanded="false" />
+                    <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+                    <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+                    <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+                    <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Communicator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Communicator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="901">
+                  <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="BoatGrader.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/nachos/ag/BoatGrader.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -89,7 +148,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Condition.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Condition.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="590">
@@ -161,6 +220,7 @@
       <replace>adultsOnMolokai</replace>
       <replace>isPlay</replace>
       <replace>passengerOnBoat</replace>
+      <replace>boatLock</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -199,6 +259,7 @@
         <option value="$PROJECT_DIR$/src/nachos/ag/BoatGrader.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/LotteryScheduler.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Boat2.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/Boat.java" />
       </list>
     </option>
@@ -756,7 +817,7 @@
       <workItem from="1489850113289" duration="10032000" />
       <workItem from="1489900277583" duration="737000" />
       <workItem from="1489934710576" duration="3207000" />
-      <workItem from="1489987119540" duration="18907000" />
+      <workItem from="1489987119540" duration="21506000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -898,11 +959,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490062412614</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="okay, i decide to redo. i understand what means lock and conditional variable.">
+      <created>1490066019662</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1490066019662</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153483000" />
+    <option name="totallyTimeSpent" value="156082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -932,7 +1000,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1405821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="745" y="541" width="379" height="539" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1405821" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="745" y="541" width="379" height="539" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1004,7 +1072,8 @@
     <MESSAGE value="before go to cha" />
     <MESSAGE value="before sunset" />
     <MESSAGE value="want to redo, then i find out i was actually just stuck. now , ready to move on." />
-    <option name="LAST_COMMIT_MESSAGE" value="want to redo, then i find out i was actually just stuck. now , ready to move on." />
+    <MESSAGE value="okay, i decide to redo. i understand what means lock and conditional variable." />
+    <option name="LAST_COMMIT_MESSAGE" value="okay, i decide to redo. i understand what means lock and conditional variable." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1017,14 +1086,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1490,14 +1551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Communicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/AbstractList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1590,53 +1643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="428" column="30" lean-forward="true" selection-start-line="428" selection-start-column="30" selection-end-line="428" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
-            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
-            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
-            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
-            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
-            <element signature="method#setName#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
-            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
-            <element signature="method#fork#0;class#KThread#0" expanded="false" />
-            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
-            <element signature="method#begin#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
-            <element signature="method#finish#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
-            <element signature="method#yield#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
-            <element signature="method#ready#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
-            <element signature="method#join#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
-            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
-            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
-            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
-            <element signature="method#run#0;class#KThread#0" expanded="false" />
-            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
-            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
-            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
-            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -1716,36 +1722,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Communicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="42" column="42" lean-forward="true" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#ready#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#join#0;class#KThread#0" expanded="false" />
+            <element signature="method#join#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="234" column="5" lean-forward="true" selection-start-line="234" selection-start-column="5" selection-end-line="234" selection-end-column="5" />
+        <state relative-caret-position="89">
+          <caret line="213" column="22" lean-forward="true" selection-start-line="213" selection-start-column="22" selection-end-line="213" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2205#2206#0" expanded="true" />
-            <element signature="e#2267#2268#0" expanded="true" />
-            <element signature="e#2812#2813#0" expanded="true" />
-            <element signature="e#2870#2871#0" expanded="true" />
-            <element signature="e#2899#2900#0" expanded="true" />
-            <element signature="e#2967#2968#0" expanded="true" />
-            <element signature="e#2993#2994#0" expanded="true" />
-            <element signature="e#3061#3062#0" expanded="true" />
-            <element signature="e#3104#3105#0" expanded="true" />
-            <element signature="e#3173#3174#0" expanded="true" />
-            <element signature="e#3215#3216#0" expanded="true" />
-            <element signature="e#3261#3262#0" expanded="true" />
-            <element signature="e#3307#3308#0" expanded="true" />
-            <element signature="e#3357#3358#0" expanded="true" />
-            <element signature="e#8281#8282#0" expanded="true" />
-            <element signature="e#8327#8328#0" expanded="true" />
-            <element signature="e#8410#8411#0" expanded="true" />
-            <element signature="e#8472#8473#0" expanded="true" />
-            <element signature="e#8545#8546#0" expanded="true" />
-            <element signature="e#8576#8577#0" expanded="true" />
-            <element signature="e#9846#9847#0" expanded="true" />
-            <element signature="e#9892#9893#0" expanded="true" />
-            <element signature="e#9975#9976#0" expanded="true" />
-            <element signature="e#10037#10038#0" expanded="true" />
+            <element signature="e#2219#2220#0" expanded="true" />
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2826#2827#0" expanded="true" />
+            <element signature="e#2884#2885#0" expanded="true" />
+            <element signature="e#2913#2914#0" expanded="true" />
+            <element signature="e#2981#2982#0" expanded="true" />
+            <element signature="e#3007#3008#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3118#3119#0" expanded="true" />
+            <element signature="e#3187#3188#0" expanded="true" />
+            <element signature="e#3229#3230#0" expanded="true" />
+            <element signature="e#3275#3276#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
+            <element signature="e#3371#3372#0" expanded="true" />
+            <element signature="e#8854#8855#0" expanded="true" />
+            <element signature="e#8900#8901#0" expanded="true" />
+            <element signature="e#8983#8984#0" expanded="true" />
+            <element signature="e#9045#9046#0" expanded="true" />
+            <element signature="e#9118#9119#0" expanded="true" />
+            <element signature="e#9149#9150#0" expanded="true" />
+            <element signature="e#10432#10433#0" expanded="true" />
+            <element signature="e#10478#10479#0" expanded="true" />
+            <element signature="e#10561#10562#0" expanded="true" />
+            <element signature="e#10623#10624#0" expanded="true" />
             <element signature="method#AdultItinerary#0;class#Boat#0" expanded="false" />
             <element signature="method#ChildItinerary#0;class#Boat#0" expanded="false" />
           </folding>

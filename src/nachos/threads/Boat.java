@@ -7,7 +7,7 @@ public class Boat
     static BoatGrader bg;
 
     // initial global references
-    private Lock isPlay;
+    private Lock boatLock;
     private someBoat noahsArk;
     private Island Oahu;
     private Island Molokai;
@@ -20,13 +20,13 @@ public class Boat
     private Condition passengerOnBoat;
     
     public void letBrucePlay( int adults, int child, BoatGrader b ){
-        isPlay = new Lock();
+        boatLock = new Lock();
 
-        childrenOnOahu = new Condition(isPlay); // will eventually leave island
-        childrenOnMolokai = new Condition(isPlay); // might need to back
-        adultsOnOahu = new Condition(isPlay);  // will be considered firstly
-        adultsOnMolokai = new Condition(isPlay); // finish, never need lock
-        passengerOnBoat = new Condition(isPlay);
+        childrenOnOahu = new Condition(boatLock); // will eventually leave island
+        childrenOnMolokai = new Condition(boatLock); // might need to back
+        adultsOnOahu = new Condition(boatLock);  // will be considered firstly
+        adultsOnMolokai = new Condition(boatLock); // finish, never need lock
+        passengerOnBoat = new Condition(boatLock);
 
         Oahu = new Island(adults, child);
         Oahu.currentAdults = adults;
@@ -120,7 +120,7 @@ public class Boat
         }
 
         void depart(Island from, Island to){
-            isPlay.acquire();
+            boatLock.acquire();
             if (from == this.currentLocation && !isEmpty()){
                 this.currentLocation = to;
                 if(pilot instanceof Adult){
@@ -132,11 +132,11 @@ public class Boat
                     pilot.setCurrentLocation(to);
                     bg.AdultRowToMolokai();
                     adultsOnMolokai.sleep();
-                    //isPlay.release();
+                    //boatLock.release();
 
                     clearBoat();
 
-                    //isPlay.acquire();
+                    //boatLock.acquire();
                     childrenOnMolokai.wake(); //child need to row back
 
                 }else if (passenger != null){
@@ -148,20 +148,20 @@ public class Boat
                     pilot.setCurrentLocation(to);
                     bg.ChildRowToMolokai();
                     childrenOnMolokai.sleep();
-                    //isPlay.release();
+                    //boatLock.release();
 
-                    //isPlay.acquire();
+                    //boatLock.acquire();
                     passengerOnBoat.wake();
                     passenger.setCurrentLocation(to);
                     bg.ChildRideToMolokai();
                     childrenOnMolokai.sleep();
-                    //isPlay.release();
+                    //boatLock.release();
 
                     clearBoat();
 
                     if (Oahu.initialPopulation == Molokai.getCurrentPopulation()) return; // finished
 
-                    //isPlay.acquire();
+                    //boatLock.acquire();
                     childrenOnMolokai.wake(); // on board and back
 
                 }else{
@@ -172,21 +172,21 @@ public class Boat
                     pilot.setCurrentLocation(to);
                     bg.ChildRowToOahu();
                     childrenOnOahu.sleep();
-                    //isPlay.release();
+                    //boatLock.release();
 
                     clearBoat();
                     if (Oahu.currentAdults != 0 && Molokai.currentChildern > 0)
                     {
-                        //isPlay.acquire();
+                        //boatLock.acquire();
                         adultsOnOahu.wake();
                     }
                     else {
-                        //isPlay.acquire();
+                        //boatLock.acquire();
                         childrenOnOahu.wake();
                     }
                 }
             }
-            isPlay.release();
+            boatLock.release();
         }
 
         void onBoard(Hawaiian person){
@@ -225,10 +225,20 @@ public class Boat
         abstract public void setCurrentLocation(Island currentLocation);
 
         public void run(){
-            isPlay.acquire();
+            boatLock.acquire();
             while (true){
-
-                bookTicket();
+                if (this.getCurrentLocation() == noahsArk.currentLocation)
+                    bookTicket();
+                else if(this.getCurrentLocation() == Oahu) {
+                    if (this instanceof Adult)
+                        adultsOnOahu.sleep();
+                    else childrenOnOahu.sleep();
+                }
+                else if(this.getCurrentLocation() == Molokai) {
+                    if (this instanceof Adult)
+                        adultsOnMolokai.sleep();
+                    else childrenOnMolokai.sleep();
+                }
             }
         }
 
@@ -250,16 +260,16 @@ public class Boat
 
                 noahsArk.onBoard(this);
                 // bc i am pilot
-                isPlay.release();
+                boatLock.release();
                 noahsArk.depart(getCurrentLocation(), targetLocation);
 
             }else{
                 // not able to embark
                 adultsOnOahu.sleep();
-                isPlay.release();
+                boatLock.release();
 
                 if (noahsArk.canEmbark()) {
-                    isPlay.acquire();
+                    boatLock.acquire();
                     childrenOnOahu.wake();
                 }
             }
@@ -289,19 +299,19 @@ public class Boat
 
         @Override
         void bookTicket(){
-            if(currentLocation == Oahu){
+            if(this.currentLocation == Oahu){
                 // make sure two children on board
 
                 if (noahsArk.isEmpty()){
                     noahsArk.onBoard(this);
-                    isPlay.release();
+                    boatLock.release();
                 }
                 else if(noahsArk.canEmbark()) {
-                    isPlay.acquire();
+                    boatLock.acquire();
                     childrenOnOahu.wake();
                 }
                 else {
-                    isPlay.release();
+                    boatLock.release();
                     noahsArk.depart(currentLocation, Molokai);
                 }
 
@@ -310,7 +320,7 @@ public class Boat
                 noahsArk.onBoard(this);
                 if(noahsArk.isPassenger(this) && noahsArk.canEmbark()){
                     noahsArk.ppSwitch(); // make sure pilot is in position
-                    isPlay.release();
+                    boatLock.release();
                     noahsArk.depart(currentLocation, Oahu);
 
                 }
