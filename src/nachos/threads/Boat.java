@@ -1,4 +1,5 @@
 package nachos.threads;
+import com.sun.deploy.util.SyncAccess;
 import nachos.ag.BoatGrader;
 
 public class Boat
@@ -19,11 +20,6 @@ public class Boat
     }
 
     public static void begin( int adults, int children, BoatGrader b ) {
-        Boat a = new Boat();
-        a.mybegin(adults, children, b);
-    }
-
-    public void mybegin ( int adults, int children, BoatGrader b ){
         // Store the externally generated autograder in a class
         // variable to be accessible by children.
         bg = b;
@@ -79,14 +75,14 @@ public class Boat
 
         for (int i=0;i<adults; i++){
             KThread t = new KThread(a);
-            t.setName("Adult" + i);
+            t.setName("Adult " + i);
             t.fork();
             System.out.println("Fork " + t.getName());
         }
 
         for (int i=0;i<children; i++){
             KThread t = new KThread(c);
-            t.setName("Child" + i);
+            t.setName("Child " + i);
             t.fork();
             System.out.println("Fork " + t.getName());
         }
@@ -102,28 +98,29 @@ public class Boat
 
     }
 
-    class theboat {
+    static class theboat {
         Condition passengers;
         int weight;
         island loc;
         void clear(){
             weight=0;
             passengers.wakeAll();
+            System.out.println("BoatClear");
         }
         void gameover(){
             clear();
             weight=2;
-            System.out.println("Gameover.");
+            System.out.println("GameOver.");
         }
     }
 
-    class island {
+    static class island {
         Condition waitingList;
         int adults;
         int child;
     }
 
-    void AdultItinerary(theboat aboat, island dst, island origin, Lock boatLock, island myloc) {
+    static void AdultItinerary(theboat aboat, island dst, island origin, Lock boatLock, island myloc) {
 	/* This is where you should put your solutions. Make calls
 	   to the BoatGrader to show that it is synchronized. For
 	   example:
@@ -146,7 +143,7 @@ public class Boat
 
     }
 
-    void ChildItinerary(theboat aboat, island dst, island origin, Lock boatLock, island myloc){
+    static void ChildItinerary(theboat aboat, island dst, island origin, Lock boatLock, island myloc){
         if (myloc == origin){
             // origin logic
             if(aboat.weight ==0){
