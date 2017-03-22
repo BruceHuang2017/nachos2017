@@ -5,7 +5,7 @@ public class Boat
 {
     static BoatGrader bg;
 
-    public void selfTest() {
+    public static void selfTest() {
         BoatGrader b = new BoatGrader();
 
         System.out.println("\n ***Testing Boats with only 2 children***");
@@ -18,7 +18,12 @@ public class Boat
 //  	begin(3, 3, b);
     }
 
-    public void begin( int adults, int children, BoatGrader b ) {
+    public static void begin( int adults, int children, BoatGrader b ) {
+        Boat a = new Boat();
+        a.mybegin(adults, children, b);
+    }
+
+    public void mybegin ( int adults, int children, BoatGrader b ){
         // Store the externally generated autograder in a class
         // variable to be accessible by children.
         bg = b;
