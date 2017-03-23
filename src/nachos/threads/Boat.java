@@ -88,20 +88,22 @@ public class Boat
 	       bg.AdultRowToMolokai();
 	   indicates that an adult has rowed the boat across to Molokai
 	*/
-	    boat.acquire();
-        if (mHaveChild && boatAtO){
-            boatAtO = false;
-            numberOfAdultsOnO--;
-            bg.AdultRowToMolokai();
-            numberOfAdultsOnM++;
-            childrenOnM.wake(); // does not mean this child will get lock, maybe next one is child on island O
-            adultsOnM.sleep();
-            boat.release();
+	    while (true) {
+            boat.acquire();
+            if (mHaveChild && boatAtO) {
+                boatAtO = false;
+                numberOfAdultsOnO--;
+                bg.AdultRowToMolokai();
+                numberOfAdultsOnM++;
+                childrenOnM.wake(); // does not mean this child will get lock, maybe next one is child on island O
+                adultsOnM.sleep();
+                boat.release();
 
-        }else{
-            adultsOnO.sleep();
-            boat.release();
+            } else {
+                adultsOnO.sleep();
+                boat.release();
 
+            }
         }
 
     }
@@ -116,8 +118,7 @@ public class Boat
                 numberOfChildrenOnO--;
                 bg.ChildRideToMolokai();
                 numberOfChildrenOnM++;
-                if (!mHaveChild)
-                    mHaveChild = true;
+                mHaveChild = true;
                 if(numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0)
                     childrenOnM.wake();
                 imOnO = false;
@@ -140,12 +141,12 @@ public class Boat
 
             }else if (!imOnO){
                 numberOfChildrenOnM--;
-                if(numberOfChildrenOnM==0) mHaveChild =false;
+//                if(numberOfChildrenOnM==0) mHaveChild =false;
                 bg.ChildRowToOahu();
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
-                adultsOnO.wake();
+                adultsOnO.wakeAll();
                 childrenOnO.wake();
                 childrenOnO.sleep();
                 boat.release();
