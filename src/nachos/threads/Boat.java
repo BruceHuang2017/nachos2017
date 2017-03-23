@@ -9,10 +9,10 @@ public class Boat
     private static Condition childrenOnO = new Condition(boat);
     private static Condition adultsOnM = new Condition(boat);
     private static Condition childrenOnM = new Condition(boat);
-    private static int numberOfAdultsOnO = 0;
-    private static int numberOfAdultsOnM = 0;
-    private static int numberOfChildrenOnO = 0;
-    private static int numberOfChildrenOnM = 0;
+    private static int numberOfAdultsOnO;
+    private static int numberOfAdultsOnM;
+    private static int numberOfChildrenOnO;
+    private static int numberOfChildrenOnM;
     private static boolean mHaveChild = false;
     private static boolean boatAtO = true;
     private static boolean passengerAvailableOnO = false;
@@ -26,11 +26,11 @@ public class Boat
         System.out.println("\n ***Testing Boats with only 2 children***");
         begin(0, 2, b);
 
-        System.out.println("\n ***Testing Boats with 2 children, 1 adult***");
-        begin(1, 2, b);
+//        System.out.println("\n ***Testing Boats with 2 children, 1 adult***");
+//        begin(1, 2, b);
 
-        System.out.println("\n ***Testing Boats with 3 children, 3 adults***");
-        begin(3, 3, b);
+//        System.out.println("\n ***Testing Boats with 3 children, 3 adults***");
+//        begin(3, 3, b);
     }
 
     public static void begin( int adults, int children, BoatGrader b ) {
@@ -41,6 +41,8 @@ public class Boat
         // Instantiate global variables here
         numberOfAdultsOnO = adults;
         numberOfChildrenOnO = children;
+        numberOfAdultsOnM = 0;
+        numberOfChildrenOnM = 0;
 
         Runnable r = new Runnable() {
             public void run() {
@@ -50,7 +52,6 @@ public class Boat
         KThread t = new KThread(r);
         t.setName("Sample Boat Thread");
         t.fork();
-
 
         // Create threads here. See section 3.4 of the Nachos for Java
         // Walkthrough linked from the projects page.
