@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat$1.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/Boat.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" afterPath="$PROJECT_DIR$/out/production/nachos2017/nachos/threads/KThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/KThread.java" afterPath="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +39,8 @@
           <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="518">
-                  <caret line="291" column="39" lean-forward="true" selection-start-line="291" selection-start-column="39" selection-end-line="291" selection-end-column="39" />
+                <state relative-caret-position="442">
+                  <caret line="286" column="57" lean-forward="false" selection-start-line="286" selection-start-column="57" selection-end-line="286" selection-end-column="57" />
                   <folding>
                     <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
                     <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
@@ -52,16 +50,21 @@
                     <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
                     <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
                     <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="e#6043#6044#0" expanded="true" />
-                    <element signature="e#6067#6068#0" expanded="true" />
-                    <element signature="e#6744#6745#0" expanded="true" />
-                    <element signature="e#6775#6776#0" expanded="true" />
+                    <element signature="e#6055#6056#0" expanded="true" />
+                    <element signature="e#6079#6080#0" expanded="true" />
+                    <element signature="e#6623#6624#0" expanded="true" />
+                    <element signature="e#6654#6655#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Consumer.java" pinned="false" current-in-tab="false">
+            <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/function/Consumer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -130,10 +133,10 @@
                     <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
                     <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
                     <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="e#6043#6044#0" expanded="true" />
-                    <element signature="e#6067#6068#0" expanded="true" />
-                    <element signature="e#6744#6745#0" expanded="true" />
-                    <element signature="e#6775#6776#0" expanded="true" />
+                    <element signature="e#6055#6056#0" expanded="true" />
+                    <element signature="e#6079#6080#0" expanded="true" />
+                    <element signature="e#6623#6624#0" expanded="true" />
+                    <element signature="e#6654#6655#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -338,6 +341,116 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.nachosProject1">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -796,14 +909,7 @@
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
       <workItem from="1490228729429" duration="17110000" />
-      <workItem from="1490301418133" duration="6411000" />
-    </task>
-    <task id="LOCAL-00003" summary="after school, before due day.">
-      <created>1488515310196</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1488515310196</updated>
+      <workItem from="1490301418133" duration="8403000" />
     </task>
     <task id="LOCAL-00004" summary="before submit.">
       <created>1488524389941</created>
@@ -1141,11 +1247,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490275456943</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="before sunset">
+      <created>1490308452636</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1490308452637</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191751000" />
+    <option name="totallyTimeSpent" value="193743000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1245,14 +1358,14 @@
     <MESSAGE value="time to wake up and keep working on this project." />
     <MESSAGE value="weired import" />
     <MESSAGE value="before go to cha" />
-    <MESSAGE value="before sunset" />
     <MESSAGE value="want to redo, then i find out i was actually just stuck. now , ready to move on." />
     <MESSAGE value="okay, i decide to redo. i understand what means lock and conditional variable." />
     <MESSAGE value="redo" />
     <MESSAGE value="redo static" />
     <MESSAGE value="another time, redo, understand lock queue, scheduler queue, and condition queue" />
     <MESSAGE value="redo third times" />
-    <option name="LAST_COMMIT_MESSAGE" value="redo third times" />
+    <MESSAGE value="before sunset" />
+    <option name="LAST_COMMIT_MESSAGE" value="before sunset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1278,15 +1391,10 @@
             <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6067#6068#0" expanded="true" />
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
+            <element signature="e#6055#6056#0" expanded="true" />
+            <element signature="e#6079#6080#0" expanded="true" />
+            <element signature="e#6623#6624#0" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1304,15 +1412,10 @@
             <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6067#6068#0" expanded="true" />
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
+            <element signature="e#6055#6056#0" expanded="true" />
+            <element signature="e#6079#6080#0" expanded="true" />
+            <element signature="e#6623#6624#0" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1382,15 +1485,10 @@
             <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6067#6068#0" expanded="true" />
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
+            <element signature="e#6055#6056#0" expanded="true" />
+            <element signature="e#6079#6080#0" expanded="true" />
+            <element signature="e#6623#6624#0" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1460,15 +1558,10 @@
             <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6067#6068#0" expanded="true" />
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
+            <element signature="e#6055#6056#0" expanded="true" />
+            <element signature="e#6079#6080#0" expanded="true" />
+            <element signature="e#6623#6624#0" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1538,15 +1631,10 @@
             <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6067#6068#0" expanded="true" />
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
+            <element signature="e#6055#6056#0" expanded="true" />
+            <element signature="e#6079#6080#0" expanded="true" />
+            <element signature="e#6623#6624#0" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1865,14 +1953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -1917,10 +1997,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="291" column="39" lean-forward="true" selection-start-line="291" selection-start-column="39" selection-end-line="291" selection-end-column="39" />
+        <state relative-caret-position="442">
+          <caret line="286" column="57" lean-forward="false" selection-start-line="286" selection-start-column="57" selection-end-line="286" selection-end-column="57" />
           <folding>
             <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
@@ -1930,15 +2018,10 @@
             <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#pickNextThread#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="method#print#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="docComment;field#transferPriority#0;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-            <element signature="e#6043#6044#0" expanded="true" />
-            <element signature="e#6067#6068#0" expanded="true" />
-            <element signature="e#6744#6745#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
+            <element signature="e#6055#6056#0" expanded="true" />
+            <element signature="e#6079#6080#0" expanded="true" />
+            <element signature="e#6623#6624#0" expanded="true" />
+            <element signature="e#6654#6655#0" expanded="true" />
           </folding>
         </state>
       </provider>

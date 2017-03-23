@@ -232,11 +232,11 @@ public class PriorityScheduler extends Scheduler {
 			if(!myPQList.isEmpty()){
 				myPQList.forEach(
 						pq-> pq.stateQueue.forEach(st ->
-	                            {
-	                                int stp = st.getEffectivePriority();
-	                                if (stp>effectivePriority) effectivePriority=stp;
-	                            }
-	                    )
+								{
+									int stp = st.getEffectivePriority();
+									if (stp>effectivePriority) effectivePriority=stp;
+								}
+						)
 				);
 			}
 			return effectivePriority;
