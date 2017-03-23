@@ -429,9 +429,6 @@ public class KThread {
 		new PingTest(2).run();
 		new PingTest(3).run();
 
-
-
-
 	}
 
 	private static final char dbgThread = 't';

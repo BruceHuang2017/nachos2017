@@ -156,13 +156,13 @@ public class PriorityScheduler extends Scheduler {
 		 *		return.
 		 */
 		protected ThreadState pickNextThread() {
-			if(someQueue.isEmpty())
+			if(stateQueue.isEmpty())
 				return null;
 
 			ThreadState nextThreadState = new ThreadState();
 			int max = -1;
 			int priority = -1;
-			for (ThreadState w : someQueue) {
+			for (ThreadState w : stateQueue) {
 				priority = w.getEffectivePriority();
 				if (priority > max){
 					// not sure could still solve FIFO problem for transfer P.
@@ -170,13 +170,13 @@ public class PriorityScheduler extends Scheduler {
 					max = priority;
 				}
 			}
-			someQueue.remove(nextThreadState);
+			stateQueue.remove(nextThreadState);
 			return nextThreadState;
 		}
 
 		public void print() {
 			Lib.assertTrue(Machine.interrupt().disabled());
-			for (Iterator i=someQueue.iterator(); i.hasNext(); )
+			for (Iterator i=stateQueue.iterator(); i.hasNext(); )
 				System.out.print( ((ThreadState) i.next()).thread + " ");
 		}
 
@@ -185,8 +185,8 @@ public class PriorityScheduler extends Scheduler {
 		 * threads to the owning thread.
 		 */
 		public boolean transferPriority;
-		public ThreadState theThreadState = null;
-		private LinkedList<ThreadState> someQueue = new LinkedList<>(); // FIFO
+		public ThreadState currentThreadS = null;
+		private LinkedList<ThreadState> stateQueue = new LinkedList<>(); // FIFO
 	}
 
 	/**
@@ -223,13 +223,20 @@ public class PriorityScheduler extends Scheduler {
 		 *
 		 * @return	the effective priority of the associated thread.
 		 */
+		// recursive solution
 		public int getEffectivePriority() {
-			this.waitQueue.someQueue.forEach(w -> {
-				if (w.priority>effectivePriority){
-					this.effectivePriority = w.priority;
-				}
-			});
+			KThread owner = this.thread;
+			effectivePriority = priority;
+			((ThreadState)owner.schedulingState).myPQList.forEach(
+					pq-> pq.stateQueue.forEach(st ->
+                            {
+                                int stp = st.getEffectivePriority();
+                                if (stp>effectivePriority) effectivePriority=stp;
+                            }
+                    )
+			);
 			return effectivePriority;
+
 		}
 
 		private void setEffectivePriority(){
@@ -243,12 +250,12 @@ public class PriorityScheduler extends Scheduler {
 		 * @param	priority	the new priority.
 		 */
 		public void setPriority(int priority) {
-//			if (this.priority == priority)
-//				return;
+			if (this.priority == priority)
+				return;
 
 			this.priority = priority;
+			setEffectivePriority();
 
-			// implement me ??
 		}
 
 		/**
@@ -264,10 +271,9 @@ public class PriorityScheduler extends Scheduler {
 		 * @see	nachos.threads.ThreadQueue#waitForAccess
 		 */
 		public void waitForAccess(PriorityQueue waitQueue) {
-
-			waitQueue.someQueue.add(this);
-			this.waitQueue = waitQueue;
-
+			waitQueue.stateQueue.add(this);
+			if(waitQueue.transferPriority)
+				myPQList.add(waitQueue);
 		}
 
 		/**
@@ -281,10 +287,8 @@ public class PriorityScheduler extends Scheduler {
 		 * @see	nachos.threads.ThreadQueue#nextThread
 		 */
 		public void acquire(PriorityQueue waitQueue) {
-			// works on both lock or next thread.
 			if (waitQueue.transferPriority){
-				this.waitQueue = waitQueue;
-				waitQueue.theThreadState = this;
+				waitQueue.currentThreadS = this;
 				setEffectivePriority();
 			}
 
@@ -293,7 +297,7 @@ public class PriorityScheduler extends Scheduler {
 		/** The thread with which this object is associated. */
 		protected KThread thread;
 		/** The priority of the associated thread. */
-		protected PriorityQueue waitQueue = null;
+		protected LinkedList<PriorityQueue> myPQList = new LinkedList<>();
 		protected int priority = priorityDefault;
 		protected int effectivePriority = priorityDefault;
 
