@@ -108,9 +108,9 @@ public class Boat
 
     static void ChildItinerary() {
         boolean imOnO = true;
-        boat.acquire();
         // children will continue if the task is not finished.
         while (true) {
+            boat.acquire();
             if (passengerAvailableOnO && imOnO){
                 passengerAvailableOnO = false;
                 numberOfChildrenOnO--;
@@ -139,7 +139,6 @@ public class Boat
 
 
             }else if (!imOnO){
-
                 numberOfChildrenOnM--;
                 if(numberOfChildrenOnM==0) mHaveChild =false;
                 bg.ChildRowToOahu();
