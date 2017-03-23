@@ -57,7 +57,7 @@ public class Boat
         // Walkthrough linked from the projects page.
 
         for(int i=0; i<adults; i++){
-            KThread t = new KThread(new Runnable() {
+            KThread a = new KThread(new Runnable() {
                 @Override
                 public void run() {
                     AdultItinerary();
@@ -67,7 +67,7 @@ public class Boat
         }
 
         for(int i=0; i<children; i++){
-            KThread t = new KThread(new Runnable() {
+            KThread c = new KThread(new Runnable() {
                 @Override
                 public void run() {
                     ChildItinerary();
