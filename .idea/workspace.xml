@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -733,13 +731,6 @@
       <workItem from="1490275794220" duration="402000" />
       <workItem from="1490276550223" duration="8000" />
     </task>
-    <task id="LOCAL-00003" summary="after school, before due day.">
-      <created>1488515310196</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1488515310196</updated>
-    </task>
     <task id="LOCAL-00004" summary="before submit.">
       <created>1488524389941</created>
       <option name="number" value="00004" />
@@ -1076,11 +1067,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490276433872</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="from mac">
+      <created>1490277523392</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1490277523392</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184004000" />
+    <option name="totallyTimeSpent" value="184012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
