@@ -96,6 +96,7 @@ public class Boat
                 bg.AdultRowToMolokai();
                 numberOfAdultsOnM++;
                 childrenOnM.wake(); // does not mean this child will get lock, maybe next one is child on island O
+                passengerAvailableOnO = false;
                 adultsOnM.sleep();
                 boat.release();
 
@@ -128,26 +129,32 @@ public class Boat
 
 
             }else if (!passengerAvailableOnO && imOnO){
-                // as pilot
-                numberOfChildrenOnO--;
-                bg.ChildRowToMolokai();
-                numberOfChildrenOnM++;
-                imOnO = false;
-                boatAtO = false;
-                passengerAvailableOnO = true;
-                childrenOnM.sleep();
-                boat.release();
 
+                if(boatAtO) {// as pilot
+                    numberOfChildrenOnO--;
+                    bg.ChildRowToMolokai();
+                    numberOfChildrenOnM++;
+                    imOnO = false;
+                    boatAtO = false;
+                    passengerAvailableOnO = true;
+                    childrenOnM.sleep();
+                    boat.release();
+                }else{
+                    childrenOnO.sleep();
+                    boat.release();
+                }
 
             }else if (!imOnO){
-                childrenOnM.sleep(); // keep lock forever
                 numberOfChildrenOnM--;
+                mHaveChild=false;
                 bg.ChildRowToOahu();
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
-                adultsOnO.wakeAll();
-                childrenOnO.wake();
+                if(numberOfChildrenOnM==0)
+                    childrenOnO.wake();
+                else
+                    adultsOnO.wake();
                 childrenOnO.sleep();
                 boat.release();
 
