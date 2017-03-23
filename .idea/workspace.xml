@@ -145,7 +145,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -730,7 +730,7 @@
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
       <workItem from="1490228729429" duration="15336000" />
-      <workItem from="1490275794220" duration="149000" />
+      <workItem from="1490275794220" duration="322000" />
     </task>
     <task id="LOCAL-00002" summary="4 shot">
       <created>1488492042105</created>
@@ -1079,7 +1079,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183715000" />
+    <option name="totallyTimeSpent" value="183888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
