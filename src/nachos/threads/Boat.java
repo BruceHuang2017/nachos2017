@@ -136,8 +136,8 @@ public class Boat
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
-                childrenOnO.wakeAll();
                 adultsOnO.wakeAll();
+                childrenOnO.wakeAll();
                 boat.release();
                 childrenOnO.sleep();
 
