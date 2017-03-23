@@ -94,11 +94,13 @@ public class Boat
             bg.AdultRowToMolokai();
             numberOfAdultsOnM++;
             childrenOnM.wake(); // does not mean this child will get lock, maybe next one is child on island O
-            boat.release();
             adultsOnM.sleep();
-        }else{
             boat.release();
+
+        }else{
             adultsOnO.sleep();
+            boat.release();
+
         }
 
     }
@@ -119,19 +121,21 @@ public class Boat
                     childrenOnM.wake();
                 imOnO = false;
                 boatAtO = false;
-                boat.release();
                 childrenOnM.sleep();
+                boat.release();
+
 
             }else if (!passengerAvailableOnO && imOnO){
-                // as pilot, may not join sleep queue on M
+                // as pilot
                 numberOfChildrenOnO--;
                 bg.ChildRowToMolokai();
                 numberOfChildrenOnM++;
                 imOnO = false;
                 boatAtO = false;
                 passengerAvailableOnO = true;
-                boat.release();
                 childrenOnM.sleep();
+                boat.release();
+
 
             }else if (!imOnO){
 
@@ -143,8 +147,8 @@ public class Boat
                 boatAtO = true;
                 if(numberOfAdultsOnO!=0) adultsOnO.wake();
                 childrenOnO.wake();
-                boat.release();
                 childrenOnO.sleep();
+                boat.release();
 
             }else{
                 System.out.println("unexpected error");
