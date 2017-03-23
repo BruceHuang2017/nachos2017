@@ -17,9 +17,6 @@ public class Boat
     private static boolean boatAtO = true;
     private static boolean passengerAvailableOnO = false;
 
-
-
-
     public static void selfTest(){
         BoatGrader b = new BoatGrader();
 
@@ -114,8 +111,10 @@ public class Boat
                 numberOfChildrenOnO--;
                 bg.ChildRideToMolokai();
                 numberOfChildrenOnM++;
-                if (!mHaveChild) mHaveChild = true;
-                if(numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0) childrenOnM.wake();
+                if (!mHaveChild)
+                    mHaveChild = true;
+                if(numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0)
+                    childrenOnM.wake();
                 imOnO = false;
                 boatAtO = false;
                 boat.release();
@@ -140,11 +139,13 @@ public class Boat
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
-                adultsOnO.wakeAll();
-                childrenOnO.wakeAll();
+                if(numberOfAdultsOnO!=0) adultsOnO.wake();
+                childrenOnO.wake();
                 boat.release();
                 childrenOnO.sleep();
 
+            }else{
+                System.out.println("unexpected error");
             }
         }
 
