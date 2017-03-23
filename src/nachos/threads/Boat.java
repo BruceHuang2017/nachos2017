@@ -112,7 +112,9 @@ public class Boat
                 numberOfChildrenOnO--;
                 bg.ChildRideToMolokai();
                 numberOfChildrenOnM++;
+                if (!mHaveChild) mHaveChild = true;
                 if(numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0) childrenOnM.wake();
+                boatAtO = false;
                 boat.release();
                 childrenOnM.sleep();
 
@@ -121,8 +123,8 @@ public class Boat
                 numberOfChildrenOnO--;
                 bg.ChildRowToMolokai();
                 numberOfChildrenOnM++;
-                if (!mHaveChild) mHaveChild = true;
                 imOnO = false;
+                boatAtO = false;
                 passengerAvailableOnO = true;
                 boat.release();
                 childrenOnM.sleep();
@@ -134,6 +136,7 @@ public class Boat
                 bg.ChildRowToOahu();
                 numberOfChildrenOnO++;
                 imOnO = true;
+                boatAtO = true;
                 childrenOnO.wakeAll();
                 adultsOnO.wakeAll();
                 boat.release();
