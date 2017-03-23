@@ -13,6 +13,9 @@ public class Boat
     private static int numberOfAdultsOnM = 0;
     private static int numberOfChildrenOnO = 0;
     private static int numberOfChildrenOnM = 0;
+    private static boolean mHaveChild = false;
+    private static boolean boatAtO = true;
+    private static boolean passengerAvailableOnO = false;
 
 
 
@@ -84,14 +87,60 @@ public class Boat
 	   indicates that an adult has rowed the boat across to Molokai
 	*/
 	    boat.acquire();
-
-
-
+        if (mHaveChild && boatAtO){
+            boatAtO = false;
+            numberOfAdultsOnO--;
+            bg.AdultRowToMolokai();
+            numberOfAdultsOnM++;
+            childrenOnM.wake(); // does not mean this child will get lock, maybe next one is child on island O
+            boat.release();
+            adultsOnM.sleep();
+        }else{
+            boat.release();
+            adultsOnO.sleep();
+        }
 
     }
 
-    static void ChildItinerary()
-    {
+    static void ChildItinerary() {
+        boolean imOnO = true;
+        boat.acquire();
+        while (true) {
+            if (passengerAvailableOnO && imOnO){
+                passengerAvailableOnO = false;
+                numberOfChildrenOnO--;
+                bg.ChildRideToMolokai();
+                numberOfChildrenOnM++;
+                if(numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0) childrenOnM.wake();
+                boat.release();
+                childrenOnM.sleep();
+
+            }else if (!passengerAvailableOnO && imOnO){
+                // as pilot, may not join sleep queue on M
+                numberOfChildrenOnO--;
+                bg.ChildRowToMolokai();
+                numberOfChildrenOnM++;
+                if (!mHaveChild) mHaveChild = true;
+                imOnO = false;
+                passengerAvailableOnO = true;
+                boat.release();
+                childrenOnM.sleep();
+
+            }else{
+
+                numberOfChildrenOnM--;
+                if(numberOfChildrenOnM==0) mHaveChild =false;
+                bg.ChildRowToOahu();
+                numberOfChildrenOnO++;
+                imOnO = true;
+                childrenOnO.wakeAll();
+                adultsOnO.wakeAll();
+                boat.release();
+                childrenOnO.sleep();
+
+            }
+        }
+
     }
 
     static void SampleItinerary()

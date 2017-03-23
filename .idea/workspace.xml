@@ -36,13 +36,15 @@
       <file leaf-file-name="Boat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+            <state relative-caret-position="666">
+              <caret line="130" column="38" lean-forward="true" selection-start-line="130" selection-start-column="38" selection-end-line="130" selection-end-column="38" />
               <folding>
-                <element signature="e#1582#1583#0" expanded="true" />
-                <element signature="e#1638#1639#0" expanded="true" />
-                <element signature="e#1841#1842#0" expanded="true" />
-                <element signature="e#1897#1898#0" expanded="true" />
+                <element signature="e#1730#1731#0" expanded="true" />
+                <element signature="e#1786#1787#0" expanded="true" />
+                <element signature="e#1989#1990#0" expanded="true" />
+                <element signature="e#2045#2046#0" expanded="true" />
+                <element signature="e#2164#2165#0" expanded="true" />
+                <element signature="e#2213#2214#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,9 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>join()</find>
-      <find>newthreadqueue</find>
-      <find>enabled</find>
       <find>finishing</find>
       <find>getThreadState</find>
       <find>fork</find>
@@ -89,6 +88,9 @@
       <find>adultsInMolokai</find>
       <find>ticket</find>
       <find>hawaiianOnBoat</find>
+      <find>imPassenger</find>
+      <find>passenger</find>
+      <find>passengerAvailable</find>
     </findStrings>
     <replaceStrings>
       <replace>Child</replace>
@@ -96,6 +98,9 @@
       <replace>isPlay</replace>
       <replace>passengerOnBoat</replace>
       <replace>boatLock</replace>
+      <replace>passenger</replace>
+      <replace>passengerAvailable</replace>
+      <replace>passengerAvailableOnO</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -696,7 +701,7 @@
       <workItem from="1490131661466" duration="10315000" />
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
-      <workItem from="1490228729429" duration="1687000" />
+      <workItem from="1490228729429" duration="7226000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -880,11 +885,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490141556533</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="another time, redo, understand lock queue, scheduler queue, and condition queue">
+      <created>1490230450522</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1490230450522</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169917000" />
+    <option name="totallyTimeSpent" value="175456000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -989,7 +1001,8 @@
     <MESSAGE value="okay, i decide to redo. i understand what means lock and conditional variable." />
     <MESSAGE value="redo" />
     <MESSAGE value="redo static" />
-    <option name="LAST_COMMIT_MESSAGE" value="redo static" />
+    <MESSAGE value="another time, redo, understand lock queue, scheduler queue, and condition queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="another time, redo, understand lock queue, scheduler queue, and condition queue" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1659,13 +1672,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="89" column="8" lean-forward="false" selection-start-line="89" selection-start-column="8" selection-end-line="89" selection-end-column="8" />
+        <state relative-caret-position="666">
+          <caret line="130" column="38" lean-forward="true" selection-start-line="130" selection-start-column="38" selection-end-line="130" selection-end-column="38" />
           <folding>
-            <element signature="e#1582#1583#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1897#1898#0" expanded="true" />
+            <element signature="e#1730#1731#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+            <element signature="e#1989#1990#0" expanded="true" />
+            <element signature="e#2045#2046#0" expanded="true" />
+            <element signature="e#2164#2165#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
           </folding>
         </state>
       </provider>
