@@ -69,13 +69,13 @@ public class Boat
 
         for(int i=0; i<adults; i++){
             KThread a = new KThread(ad);
-            t.fork();
+            a.fork();
             System.out.println("fork adult");
         }
 
         for(int i=0; i<children; i++){
             KThread c = new KThread(cd);
-            t.fork();
+            c.fork();
             System.out.println("fork child");
         }
     }
