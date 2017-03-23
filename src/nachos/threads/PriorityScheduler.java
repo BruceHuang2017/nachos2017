@@ -143,9 +143,11 @@ public class PriorityScheduler extends Scheduler {
 
 		public KThread nextThread() {
 			Lib.assertTrue(Machine.interrupt().disabled());
-			if (pickNextThread() == null)
+			ThreadState a = pickNextThread();
+			if (a == null)
 				return null;
-			return pickNextThread().thread;
+			else
+				return a.thread;
 		}
 
 		/**
@@ -161,7 +163,8 @@ public class PriorityScheduler extends Scheduler {
 
 			ThreadState nextThreadState = new ThreadState();
 			int max = -1;
-			int priority = -1;
+			int priority;
+
 			for (ThreadState w : stateQueue) {
 				priority = w.getEffectivePriority();
 				if (priority > max){
@@ -225,16 +228,17 @@ public class PriorityScheduler extends Scheduler {
 		 */
 		// recursive solution
 		public int getEffectivePriority() {
-			KThread owner = this.thread;
 			effectivePriority = priority;
-			((ThreadState)owner.schedulingState).myPQList.forEach(
-					pq-> pq.stateQueue.forEach(st ->
-                            {
-                                int stp = st.getEffectivePriority();
-                                if (stp>effectivePriority) effectivePriority=stp;
-                            }
-                    )
-			);
+			if(!myPQList.isEmpty()){
+				myPQList.forEach(
+						pq-> pq.stateQueue.forEach(st ->
+	                            {
+	                                int stp = st.getEffectivePriority();
+	                                if (stp>effectivePriority) effectivePriority=stp;
+	                            }
+	                    )
+				);
+			}
 			return effectivePriority;
 
 		}
