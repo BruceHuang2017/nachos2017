@@ -42,6 +42,15 @@ public class Boat
         numberOfAdultsOnO = adults;
         numberOfChildrenOnO = children;
 
+        Runnable r = new Runnable() {
+            public void run() {
+                SampleItinerary();
+            }
+        };
+        KThread t = new KThread(r);
+        t.setName("Sample Boat Thread");
+        t.fork();
+
 
         // Create threads here. See section 3.4 of the Nachos for Java
         // Walkthrough linked from the projects page.
@@ -65,18 +74,6 @@ public class Boat
             });
             t.fork();
         }
-
-        Runnable r = new Runnable() {
-            public void run() {
-                SampleItinerary();
-            }
-        };
-        KThread t = new KThread(r);
-        t.setName("Sample Boat Thread");
-        t.fork();
-
-
-
     }
 
     static void AdultItinerary() {
@@ -114,6 +111,7 @@ public class Boat
                 numberOfChildrenOnM++;
                 if (!mHaveChild) mHaveChild = true;
                 if(numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0) childrenOnM.wake();
+                imOnO = false;
                 boatAtO = false;
                 boat.release();
                 childrenOnM.sleep();
@@ -129,7 +127,7 @@ public class Boat
                 boat.release();
                 childrenOnM.sleep();
 
-            }else{
+            }else if (!imOnO){
 
                 numberOfChildrenOnM--;
                 if(numberOfChildrenOnM==0) mHaveChild =false;

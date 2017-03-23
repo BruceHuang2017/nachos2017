@@ -36,15 +36,15 @@
       <file leaf-file-name="Boat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="126" column="32" lean-forward="true" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+            <state relative-caret-position="684">
+              <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
               <folding>
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1786#1787#0" expanded="true" />
-                <element signature="e#1989#1990#0" expanded="true" />
-                <element signature="e#2045#2046#0" expanded="true" />
-                <element signature="e#2164#2165#0" expanded="true" />
-                <element signature="e#2213#2214#0" expanded="true" />
+                <element signature="e#1521#1522#0" expanded="true" />
+                <element signature="e#1570#1571#0" expanded="true" />
+                <element signature="e#1956#1957#0" expanded="true" />
+                <element signature="e#2012#2013#0" expanded="true" />
+                <element signature="e#2215#2216#0" expanded="true" />
+                <element signature="e#2271#2272#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -701,7 +701,7 @@
       <workItem from="1490131661466" duration="10315000" />
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
-      <workItem from="1490228729429" duration="7642000" />
+      <workItem from="1490228729429" duration="7972000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -906,11 +906,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490240996387</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="redo third times">
+      <created>1490241308350</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1490241308350</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175872000" />
+    <option name="totallyTimeSpent" value="176202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1687,15 +1694,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="126" column="32" lean-forward="true" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+        <state relative-caret-position="684">
+          <caret line="137" column="38" lean-forward="true" selection-start-line="137" selection-start-column="38" selection-end-line="137" selection-end-column="38" />
           <folding>
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1786#1787#0" expanded="true" />
-            <element signature="e#1989#1990#0" expanded="true" />
-            <element signature="e#2045#2046#0" expanded="true" />
-            <element signature="e#2164#2165#0" expanded="true" />
-            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#1521#1522#0" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1956#1957#0" expanded="true" />
+            <element signature="e#2012#2013#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="true" />
+            <element signature="e#2271#2272#0" expanded="true" />
           </folding>
         </state>
       </provider>
