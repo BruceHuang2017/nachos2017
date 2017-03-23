@@ -150,12 +150,13 @@ public class Boat
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
-                if(numberOfChildrenOnM==0) {
+                if(numberOfChildrenOnM==0 || numberOfAdultsOnO==0) {
                     mHaveChild = false;
-                    childrenOnO.wake();
+                    childrenOnO.wakeAll();
                 }
                 else
                     adultsOnO.wake();
+
                 childrenOnO.sleep();
                 boat.release();
 
