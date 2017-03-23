@@ -115,6 +115,7 @@ public class Boat
         while (true) {
             boat.acquire();
             if (passengerAvailableOnO && imOnO){
+                // go as passenger
                 passengerAvailableOnO = false;
                 numberOfChildrenOnO--;
                 bg.ChildRideToMolokai();
@@ -137,6 +138,7 @@ public class Boat
                     imOnO = false;
                     boatAtO = false;
                     passengerAvailableOnO = true;
+                    childrenOnO.wake(); //key bug
                     childrenOnM.sleep();
                     boat.release();
                 }else{
@@ -155,7 +157,7 @@ public class Boat
                     childrenOnO.wakeAll();
                 }
                 else
-                    adultsOnO.wake();
+                    adultsOnO.wakeAll();
 
                 childrenOnO.sleep();
                 boat.release();
