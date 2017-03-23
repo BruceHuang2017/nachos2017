@@ -113,7 +113,7 @@ public class Boat
         // children will continue if the task is not finished.
         while (true) {
             boat.acquire();
-            if (passengerAvailableOnO && imOnO){
+            if (passengerAvailableOnO && imOnO && boatAtO){
                 passengerAvailableOnO = false;
                 numberOfChildrenOnO--;
                 bg.ChildRideToMolokai();
@@ -127,7 +127,7 @@ public class Boat
                 boat.release();
 
 
-            }else if (!passengerAvailableOnO && imOnO){
+            }else if (!passengerAvailableOnO && imOnO && boatAtO){
                 // as pilot
                 numberOfChildrenOnO--;
                 bg.ChildRowToMolokai();
@@ -139,10 +139,11 @@ public class Boat
                 boat.release();
 
 
-            }else if (!imOnO){
+            }else if (!imOnO && !boatAtO){
+
                 numberOfChildrenOnM--;
 //                if(numberOfChildrenOnM==0) mHaveChild =false;
-                bg.ChildRowToOahu();
+                if (numberOfChildrenOnO!=0 || numberOfAdultsOnO!=0) bg.ChildRowToOahu();
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
