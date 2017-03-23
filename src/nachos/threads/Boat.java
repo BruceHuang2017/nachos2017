@@ -105,6 +105,7 @@ public class Boat
     static void ChildItinerary() {
         boolean imOnO = true;
         boat.acquire();
+        // children will continue if the task is not finished.
         while (true) {
             if (passengerAvailableOnO && imOnO){
                 passengerAvailableOnO = false;
