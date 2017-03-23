@@ -146,13 +146,14 @@ public class Boat
 
             }else if (!imOnO){
                 numberOfChildrenOnM--;
-                mHaveChild=false;
                 bg.ChildRowToOahu();
                 numberOfChildrenOnO++;
                 imOnO = true;
                 boatAtO = true;
-                if(numberOfChildrenOnM==0)
+                if(numberOfChildrenOnM==0) {
+                    mHaveChild = false;
                     childrenOnO.wake();
+                }
                 else
                     adultsOnO.wake();
                 childrenOnO.sleep();
