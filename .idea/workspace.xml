@@ -38,8 +38,8 @@
           <file leaf-file-name="Boat.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="784">
-                  <caret line="147" column="52" lean-forward="false" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
+                <state relative-caret-position="540">
+                  <caret line="78" column="42" lean-forward="false" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
                   <folding>
                     <element signature="e#1574#1575#0" expanded="true" />
                     <element signature="e#1623#1624#0" expanded="true" />
@@ -732,7 +732,7 @@
       <workItem from="1490131661466" duration="10315000" />
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
-      <workItem from="1490228729429" duration="9251000" />
+      <workItem from="1490228729429" duration="9391000" />
     </task>
     <task id="LOCAL-00001" summary="second shot">
       <created>1488468240479</created>
@@ -979,11 +979,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490242419449</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="redo third times">
+      <created>1490242917090</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1490242917090</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177481000" />
+    <option name="totallyTimeSpent" value="177621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1765,8 +1772,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="147" column="52" lean-forward="false" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="52" />
+        <state relative-caret-position="540">
+          <caret line="78" column="42" lean-forward="false" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
           <folding>
             <element signature="e#1574#1575#0" expanded="true" />
             <element signature="e#1623#1624#0" expanded="true" />
