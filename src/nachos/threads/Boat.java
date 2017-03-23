@@ -140,10 +140,7 @@ public class Boat
 
 
             }else if (!imOnO){
-                if(numberOfChildrenOnO==0 && numberOfAdultsOnO==0)
-                {
-                    childrenOnM.sleep(); // keep lock forever
-                }
+                childrenOnM.sleep(); // keep lock forever
                 numberOfChildrenOnM--;
                 bg.ChildRowToOahu();
                 numberOfChildrenOnO++;
