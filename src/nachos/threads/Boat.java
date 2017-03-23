@@ -41,7 +41,7 @@ public class Boat
         numberOfAdultsOnM = 0;
         numberOfChildrenOnM = 0;
 
-        Runnable r = new Runnable() {
+        /*       Runnable r = new Runnable() {
             public void run() {
                 SampleItinerary();
             }
@@ -49,6 +49,7 @@ public class Boat
         KThread t = new KThread(r);
         t.setName("Sample Boat Thread");
         t.fork();
+        */
 
         // Create threads here. See section 3.4 of the Nachos for Java
         // Walkthrough linked from the projects page.
