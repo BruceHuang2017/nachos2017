@@ -48,7 +48,7 @@ public class KThread {
 		}
 		else {
 			readyQueue = ThreadedKernel.scheduler.newThreadQueue(false);
-			joinQueue = ThreadedKernel.scheduler.newThreadQueue(false);
+			joinQueue = ThreadedKernel.scheduler.newThreadQueue(true);
 			readyQueue.acquire(this);
 
 			currentThread = this;
@@ -277,8 +277,7 @@ public class KThread {
 	 * call is not guaranteed to return. This thread must not be the current
 	 * thread.
 	 */
-//	private boolean flagJoin = true;
-//	private static ThreadQueue joinQueue = null;
+
 	public void join() {
 		Lib.debug(dbgThread, "Joining to thread: " + toString());
 		Lib.assertTrue(this != currentThread);
@@ -467,7 +466,7 @@ public class KThread {
 	private boolean flagJoin = true;
 
 	private static ThreadQueue readyQueue = null;
-	private static ThreadQueue joinQueue = null;
+	public static ThreadQueue joinQueue = null;
 	private static KThread currentThread = null;
 	private static KThread toBeDestroyed = null;
 	private static KThread idleThread = null;

@@ -227,54 +227,27 @@ public class PriorityScheduler extends Scheduler {
 		 * @return	the effective priority of the associated thread.
 		 */
 		// recursive solution
-
-		/*
-		for (PriorityQueue pq : myPQList){
-			pq-> pq.stateQueue.forEach(st ->
-					{
-						int stp = st.getEffectivePriority();
-						if (stp>effectivePriority)
-							effectivePriority=stp;
-					}
-			)
-		}
-		*/
-
-/*
-if(!owner.myPQList.isEmpty()){
-	if(myPQList != null){
-		myPQList.forEach(
-			pq ->{
-				if(pq.transferPriority){
-					pq.stateQueue.forEach(st ->{
-						int stp = st.getEffectivePriority();
-						if (stp>effectivePriority)
-							effectivePriority=stp;
-						}
-					);
-				}
-			}
-		);
-	}
-}
-*/
 		public int getEffectivePriority() {
 			effectivePriority = priority;
 			if(!myPQList.isEmpty()){
 				if(myPQList != null){
 					myPQList.forEach(
-						pq-> pq.stateQueue.forEach(st ->
-								{
-									int stp = st.getEffectivePriority();
-									if (stp>effectivePriority)
-										effectivePriority=stp;
-								}
-						)
+						pq-> {
+							if(pq.transferPriority)
+							{
+								pq.stateQueue.forEach(st ->
+										{
+											int stp = st.getEffectivePriority();
+											if (stp>effectivePriority)
+												effectivePriority=stp;
+										}
+								);
+							}
+						}
 					);
 				}
 			}
 			return effectivePriority;
-
 		}
 
 		private void setEffectivePriority(){
@@ -310,9 +283,7 @@ if(!owner.myPQList.isEmpty()){
 		 */
 		public void waitForAccess(PriorityQueue waitQueue) {
 			waitQueue.stateQueue.add(this);
-			
-			if(waitQueue.transferPriority)
-				myPQList.add(waitQueue);
+			myPQList.add(waitQueue);
 
 		}
 
@@ -329,8 +300,7 @@ if(!owner.myPQList.isEmpty()){
 
 		public void acquire(PriorityQueue waitQueue) {
 			if (waitQueue.transferPriority){
-					waitQueue.currentThreadS = this;
-
+				waitQueue.currentThreadS = this;
 			}
 
 		}
