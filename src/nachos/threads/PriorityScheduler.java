@@ -251,7 +251,7 @@ public class PriorityScheduler extends Scheduler {
 		}
 
 		private void setEffectivePriority(){
-			getEffectivePriority();
+			effectivePriority = getEffectivePriority();
 		}
 
 

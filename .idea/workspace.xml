@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,96 +32,90 @@
     <favorites_list name="nachos2017" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1032">
-                  <caret line="285" column="36" lean-forward="true" selection-start-line="285" selection-start-column="36" selection-end-line="285" selection-end-column="36" />
-                  <folding>
-                    <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                    <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="196" column="48" lean-forward="true" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
-                  <folding>
-                    <element signature="docComment;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
-                    <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
-                    <element signature="method#setName#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
-                    <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
-                    <element signature="method#runThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#begin#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
-                    <element signature="method#yield#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
-                    <element signature="method#sleep#0;class#KThread#0" expanded="false" />
-                    <element signature="method#ready#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
-                    <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
-                    <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
-                    <element signature="method#run#0;class#KThread#0" expanded="false" />
-                    <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
-                    <element signature="method#saveState#0;class#KThread#0" expanded="false" />
-                    <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
-                    <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Lock.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="253" column="32" lean-forward="false" selection-start-line="253" selection-start-column="32" selection-end-line="253" selection-end-column="32" />
+              <folding>
+                <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="e#6783#6784#0" expanded="true" />
+                <element signature="e#6834#6835#0" expanded="true" />
+                <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="711">
+              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="290" column="47" lean-forward="true" selection-start-line="290" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+                <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+                <element signature="method#setName#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+                <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+                <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#begin#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+                <element signature="method#yield#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+                <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+                <element signature="method#ready#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+                <element signature="method#run#0;class#KThread#0" expanded="false" />
+                <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+                <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+                <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+                <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,7 +128,6 @@
     <findStrings>
       <find>restorestate</find>
       <find>scheduler</find>
-      <find>join</find>
       <find>intStatus</find>
       <find>PriorityQueue</find>
       <find>hashmap</find>
@@ -161,6 +155,7 @@
       <find>theThreadState</find>
       <find>myPQ</find>
       <find>geteffectivepr</find>
+      <find>join</find>
     </findStrings>
     <replaceStrings>
       <replace>Child</replace>
@@ -172,8 +167,8 @@
       <replace>passengerAvailable</replace>
       <replace>passengerAvailableOnO</replace>
       <replace>stateQueue</replace>
-      <replace>myPQList</replace>
       <replace>currentThreadS</replace>
+      <replace>myPQList</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -227,10 +222,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="57" />
-    <option name="y" value="21" />
-    <option name="width" value="1863" />
-    <option name="height" value="1059" />
+    <option name="x" value="287" />
+    <option name="y" value="46" />
+    <option name="width" value="1019" />
+    <option name="height" value="986" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -885,14 +880,7 @@
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
       <workItem from="1490228729429" duration="17110000" />
-      <workItem from="1490301418133" duration="12166000" />
-    </task>
-    <task id="LOCAL-00006" summary="night work">
-      <created>1489217723280</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1489217723280</updated>
+      <workItem from="1490301418133" duration="12800000" />
     </task>
     <task id="LOCAL-00007" summary="morning work, sunday. aim to solve prj 1,2,3">
       <created>1489339555771</created>
@@ -1230,11 +1218,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490389024980</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="update pscheduler">
+      <created>1490389094366</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1490389094366</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197506000" />
+    <option name="totallyTimeSpent" value="198140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1246,7 +1241,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="21" width="1863" height="1059" extended-state="6" />
+    <frame x="287" y="46" width="1019" height="986" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1259,7 +1254,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5030628" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22899505" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2930622" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277512" sideWeight="0.49693722" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.49693722" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1341,11 +1336,12 @@
     <MESSAGE value="another time, redo, understand lock queue, scheduler queue, and condition queue" />
     <MESSAGE value="redo third times" />
     <MESSAGE value="before sunset" />
-    <option name="LAST_COMMIT_MESSAGE" value="before sunset" />
+    <MESSAGE value="update pscheduler" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pscheduler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1371,6 +1367,8 @@
             <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
             <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
@@ -1396,6 +1394,8 @@
             <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
             <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
@@ -1470,6 +1470,8 @@
             <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
             <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
@@ -1544,6 +1546,8 @@
             <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
             <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
@@ -1618,6 +1622,8 @@
             <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
             <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
@@ -1939,16 +1945,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="39" column="44" lean-forward="true" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="711">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="196" column="48" lean-forward="true" selection-start-line="196" selection-start-column="48" selection-end-line="196" selection-end-column="48" />
+        <state relative-caret-position="486">
+          <caret line="290" column="47" lean-forward="true" selection-start-line="290" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#KThread#0" expanded="false" />
             <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
@@ -1988,8 +1994,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="285" column="36" lean-forward="true" selection-start-line="285" selection-start-column="36" selection-end-line="285" selection-end-column="36" />
+        <state relative-caret-position="607">
+          <caret line="253" column="32" lean-forward="false" selection-start-line="253" selection-start-column="32" selection-end-line="253" selection-end-column="32" />
           <folding>
             <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
@@ -2003,6 +2009,8 @@
             <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
             <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
             <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
