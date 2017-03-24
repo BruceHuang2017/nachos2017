@@ -163,7 +163,7 @@ public class PriorityScheduler extends Scheduler {
 
 			ThreadState nextThreadState = new ThreadState();
 			int max = -1;
-			int priority;
+			int priority = -1;
 
 			for (ThreadState w : stateQueue) {
 				priority = w.getEffectivePriority();
@@ -230,14 +230,18 @@ public class PriorityScheduler extends Scheduler {
 		public int getEffectivePriority() {
 			effectivePriority = priority;
 			if(!myPQList.isEmpty()){
-				myPQList.forEach(
+				if(myPQList != null)
+				{
+					myPQList.forEach(
 						pq-> pq.stateQueue.forEach(st ->
 								{
 									int stp = st.getEffectivePriority();
-									if (stp>effectivePriority) effectivePriority=stp;
+									if (stp>effectivePriority)
+										effectivePriority=stp;
 								}
 						)
-				);
+					);
+				}
 			}
 			return effectivePriority;
 
