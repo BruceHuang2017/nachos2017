@@ -144,10 +144,10 @@ public class PriorityScheduler extends Scheduler {
 		public KThread nextThread() {
 			Lib.assertTrue(Machine.interrupt().disabled());
 			ThreadState a = pickNextThread();
-			if (a == null)
-				return null;
+			if (a != null)
+			 	{return a.thread;}
 			else
-				return a.thread;
+				return null;
 		}
 
 		/**
@@ -158,7 +158,7 @@ public class PriorityScheduler extends Scheduler {
 		 *		return.
 		 */
 		protected ThreadState pickNextThread() {
-			if(stateQueue.isEmpty())
+			if(stateQueue.isEmpty() || stateQueue.peek() == null)
 				return null;
 
 			ThreadState nextThreadState = new ThreadState();
@@ -227,11 +227,41 @@ public class PriorityScheduler extends Scheduler {
 		 * @return	the effective priority of the associated thread.
 		 */
 		// recursive solution
+
+		/*
+		for (PriorityQueue pq : myPQList){
+			pq-> pq.stateQueue.forEach(st ->
+					{
+						int stp = st.getEffectivePriority();
+						if (stp>effectivePriority)
+							effectivePriority=stp;
+					}
+			)
+		}
+		*/
+
+/*
+if(!owner.myPQList.isEmpty()){
+	if(myPQList != null){
+		myPQList.forEach(
+			pq ->{
+				if(pq.transferPriority){
+					pq.stateQueue.forEach(st ->{
+						int stp = st.getEffectivePriority();
+						if (stp>effectivePriority)
+							effectivePriority=stp;
+						}
+					);
+				}
+			}
+		);
+	}
+}
+*/
 		public int getEffectivePriority() {
 			effectivePriority = priority;
 			if(!myPQList.isEmpty()){
-				if(myPQList != null)
-				{
+				if(myPQList != null){
 					myPQList.forEach(
 						pq-> pq.stateQueue.forEach(st ->
 								{
@@ -280,8 +310,10 @@ public class PriorityScheduler extends Scheduler {
 		 */
 		public void waitForAccess(PriorityQueue waitQueue) {
 			waitQueue.stateQueue.add(this);
+			
 			if(waitQueue.transferPriority)
 				myPQList.add(waitQueue);
+
 		}
 
 		/**
@@ -294,10 +326,11 @@ public class PriorityScheduler extends Scheduler {
 		 * @see	nachos.threads.ThreadQueue#acquire
 		 * @see	nachos.threads.ThreadQueue#nextThread
 		 */
+
 		public void acquire(PriorityQueue waitQueue) {
 			if (waitQueue.transferPriority){
-				waitQueue.currentThreadS = this;
-				setEffectivePriority();
+					waitQueue.currentThreadS = this;
+
 			}
 
 		}
@@ -305,9 +338,11 @@ public class PriorityScheduler extends Scheduler {
 		/** The thread with which this object is associated. */
 		protected KThread thread;
 		/** The priority of the associated thread. */
-		protected LinkedList<PriorityQueue> myPQList = new LinkedList<>();
 		protected int priority = priorityDefault;
 		protected int effectivePriority = priorityDefault;
+
+		protected LinkedList<PriorityQueue> myPQList = new LinkedList<>();
+//		protected LinkedList<ThreadState> myWaitForAccessList = new LinkedList<>();
 
 	}
 
