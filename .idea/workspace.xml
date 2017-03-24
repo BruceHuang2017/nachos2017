@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/KThread.java" afterPath="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +37,7 @@
           <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
+                <state relative-caret-position="1032">
                   <caret line="285" column="36" lean-forward="true" selection-start-line="285" selection-start-column="36" selection-end-line="285" selection-end-column="36" />
                   <folding>
                     <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
@@ -887,14 +885,7 @@
       <workItem from="1490224927600" duration="173000" />
       <workItem from="1490228652518" duration="65000" />
       <workItem from="1490228729429" duration="17110000" />
-      <workItem from="1490301418133" duration="12111000" />
-    </task>
-    <task id="LOCAL-00005" summary="spring break job">
-      <created>1489124536565</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1489124536566</updated>
+      <workItem from="1490301418133" duration="12166000" />
     </task>
     <task id="LOCAL-00006" summary="night work">
       <created>1489217723280</created>
@@ -1232,11 +1223,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490310503140</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="before sunset">
+      <created>1490389024980</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1490389024980</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197451000" />
+    <option name="totallyTimeSpent" value="197506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1990,7 +1988,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
+        <state relative-caret-position="1032">
           <caret line="285" column="36" lean-forward="true" selection-start-line="285" selection-start-column="36" selection-end-line="285" selection-end-column="36" />
           <folding>
             <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
