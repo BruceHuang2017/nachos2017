@@ -2,7 +2,7 @@ package nachos.threads;
 
 import nachos.machine.*;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * Uses the hardware timer to provide preemption, and to allow threads to sleep
@@ -30,6 +30,11 @@ public class Alarm {
      */
     public void timerInterrupt() {
         boolean intStatus = Machine.interrupt().disable();
+/*
+        while(!alarmList.isEmpty && alarmList.peek()>=Machine.timer().getTime()){
+          alarmList.poll().thread.ready();
+        }
+*/
         if(!alarmList.isEmpty()) {
             alarmList.forEach(w -> {
                 if (w.wakeUpTime >= Machine.timer().getTime()) {
@@ -37,6 +42,7 @@ public class Alarm {
                 }
             }); //lambda expression for each.
         }
+
         KThread.yield();
         Machine.interrupt().restore(intStatus);
 
@@ -81,5 +87,5 @@ public class Alarm {
 
     }
 
-    private ArrayList<tuple> alarmList = new ArrayList<>();
+    private LinkedList<tuple> alarmList = new LinkedList<>();
 }
