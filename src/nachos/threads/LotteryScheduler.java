@@ -1,10 +1,5 @@
 package nachos.threads;
 
-import nachos.machine.*;
-
-import java.util.TreeSet;
-import java.util.HashSet;
-import java.util.Iterator;
 
 /**
  * A scheduler that chooses threads using a lottery.
@@ -32,7 +27,7 @@ public class LotteryScheduler extends PriorityScheduler {
      */
     public LotteryScheduler() {
     }
-    
+
     /**
      * Allocate a new lottery thread queue.
      *
@@ -42,7 +37,7 @@ public class LotteryScheduler extends PriorityScheduler {
      * @return	a new lottery thread queue.
      */
     public ThreadQueue newThreadQueue(boolean transferPriority) {
-	// implement me
-	return null;
+        // implement me
+        return null;
     }
 }

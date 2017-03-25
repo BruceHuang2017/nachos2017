@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="" />
+    <list default="true" id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" afterPath="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -11,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="GROUP_SCHEMA" value="true" />
@@ -22,25 +25,151 @@
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="nachos2017" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="KThread.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PriorityScheduler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="607">
+              <caret line="253" column="32" lean-forward="false" selection-start-line="253" selection-start-column="32" selection-end-line="253" selection-end-column="32" />
+              <folding>
+                <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="e#6783#6784#0" expanded="true" />
+                <element signature="e#6834#6835#0" expanded="true" />
+                <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+                <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="711">
+              <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="231" column="5" lean-forward="false" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
+            <state relative-caret-position="486">
+              <caret line="290" column="47" lean-forward="true" selection-start-line="290" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
               <folding>
-                <element signature="e#2810#2811#0" expanded="true" />
-                <element signature="e#2851#2852#0" expanded="true" />
+                <element signature="docComment;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+                <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+                <element signature="method#setName#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+                <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+                <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#begin#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+                <element signature="method#yield#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+                <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+                <element signature="method#ready#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+                <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+                <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+                <element signature="method#run#0;class#KThread#0" expanded="false" />
+                <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+                <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+                <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+                <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>restorestate</find>
+      <find>scheduler</find>
+      <find>intStatus</find>
+      <find>PriorityQueue</find>
+      <find>hashmap</find>
+      <find>threadqueue</find>
+      <find>effective</find>
+      <find>trans</find>
+      <find>transferPriority</find>
+      <find>setpriority</find>
+      <find>schedulingState</find>
+      <find>setEffectivePriority</find>
+      <find>Children</find>
+      <find>born</find>
+      <find>newThreadQueue</find>
+      <find>adultsInMolokai</find>
+      <find>ticket</find>
+      <find>hawaiianOnBoat</find>
+      <find>imPassenger</find>
+      <find>passenger</find>
+      <find>passengerAvailable</find>
+      <find>b</find>
+      <find>error</find>
+      <find>someQueue</find>
+      <find>nextthread</find>
+      <find>priority</find>
+      <find>theThreadState</find>
+      <find>myPQ</find>
+      <find>geteffectivepr</find>
+      <find>join</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Child</replace>
+      <replace>adultsOnMolokai</replace>
+      <replace>isPlay</replace>
+      <replace>passengerOnBoat</replace>
+      <replace>boatLock</replace>
+      <replace>passenger</replace>
+      <replace>passengerAvailable</replace>
+      <replace>passengerAvailableOnO</replace>
+      <replace>stateQueue</replace>
+      <replace>currentThreadS</replace>
+      <replace>myPQList</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +187,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/nachos/machine/TCB.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Interrupt.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Stats.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Config.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/SynchList.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Semaphore.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Lock.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/ElevatorController.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Condition2.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Condition.java" />
+        <option value="$PROJECT_DIR$/src/nachos/machine/Timer.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Alarm.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Communicator.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Scheduler.java" />
+        <option value="$PROJECT_DIR$/src/nachos/ag/BoatGrader.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/LotteryScheduler.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Boat2.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/Boat.java" />
         <option value="$PROJECT_DIR$/src/nachos/threads/KThread.java" />
+        <option value="$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java" />
       </list>
     </option>
   </component>
@@ -68,13 +218,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="116" />
-    <option name="y" value="174" />
-    <option name="width" value="1348" />
-    <option name="height" value="835" />
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="287" />
+    <option name="y" value="46" />
+    <option name="width" value="1019" />
+    <option name="height" value="986" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -91,6 +246,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -104,18 +260,168 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nachos2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="os" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nachos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nachos2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="os" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nachos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="threads" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.nachosProject1">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -123,6 +429,61 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -148,6 +509,161 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -169,12 +685,76 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="nachos2017" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -205,6 +785,41 @@
       <listeners />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
     <configuration default="false" name="nachosProject1" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="nachos.machine.Machine" />
@@ -227,6 +842,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5cc28846-5eea-43b3-8936-73a603868a3e" name="Default" comment="" />
@@ -235,19 +853,383 @@
       <option name="presentableId" value="Default" />
       <updated>1488467529123</updated>
       <workItem from="1488467530552" duration="971000" />
+      <workItem from="1488468513285" duration="20590000" />
+      <workItem from="1488516685045" duration="37000" />
+      <workItem from="1488516734590" duration="51000" />
+      <workItem from="1488516798321" duration="66000" />
+      <workItem from="1488516877736" duration="195000" />
+      <workItem from="1488517085177" duration="215000" />
+      <workItem from="1488517313449" duration="33000" />
+      <workItem from="1488517822261" duration="8211000" />
+      <workItem from="1489010023996" duration="36000" />
+      <workItem from="1489010090589" duration="2096000" />
+      <workItem from="1489124273748" duration="12000" />
+      <workItem from="1489124340840" duration="29467000" />
+      <workItem from="1489373768645" duration="5746000" />
+      <workItem from="1489419235035" duration="2520000" />
+      <workItem from="1489503288463" duration="405000" />
+      <workItem from="1489539994907" duration="22977000" />
+      <workItem from="1489601951369" duration="2695000" />
+      <workItem from="1489605238026" duration="8442000" />
+      <workItem from="1489619251539" duration="15835000" />
+      <workItem from="1489850113289" duration="10032000" />
+      <workItem from="1489900277583" duration="737000" />
+      <workItem from="1489934710576" duration="3207000" />
+      <workItem from="1489987119540" duration="23101000" />
+      <workItem from="1490131661466" duration="10315000" />
+      <workItem from="1490224927600" duration="173000" />
+      <workItem from="1490228652518" duration="65000" />
+      <workItem from="1490228729429" duration="17110000" />
+      <workItem from="1490301418133" duration="12800000" />
     </task>
-    <task id="LOCAL-00001" summary="second shot">
-      <created>1488468240479</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00007" summary="morning work, sunday. aim to solve prj 1,2,3">
+      <created>1489339555771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1488468240479</updated>
+      <updated>1489339555771</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00008" summary="start at night">
+      <created>1489374214396</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1489374214396</updated>
+    </task>
+    <task id="LOCAL-00009" summary="monday morning">
+      <created>1489413398297</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1489413398297</updated>
+    </task>
+    <task id="LOCAL-00010" summary="monday morning">
+      <created>1489419260079</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1489419260080</updated>
+    </task>
+    <task id="LOCAL-00011" summary="monday night">
+      <created>1489451380712</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1489451380712</updated>
+    </task>
+    <task id="LOCAL-00012" summary="tuesday night">
+      <created>1489542112282</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1489542112282</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tuesday night">
+      <created>1489543017490</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1489543017490</updated>
+    </task>
+    <task id="LOCAL-00014" summary="done project1">
+      <created>1489550706622</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1489550706622</updated>
+    </task>
+    <task id="LOCAL-00015" summary="wed afternoon, question, priority scheduler, do we need to implement aging and consider different queues?">
+      <created>1489612935721</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1489612935721</updated>
+    </task>
+    <task id="LOCAL-00016" summary="time to wake up and keep working on this project.">
+      <created>1489851205602</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1489851205602</updated>
+    </task>
+    <task id="LOCAL-00017" summary="weired import">
+      <created>1489851967208</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1489851967208</updated>
+    </task>
+    <task id="LOCAL-00018" summary="before go to cha">
+      <created>1489946942752</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1489946942752</updated>
+    </task>
+    <task id="LOCAL-00019" summary="before sunset">
+      <created>1490056109789</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1490056109789</updated>
+    </task>
+    <task id="LOCAL-00020" summary="want to redo, then i find out i was actually just stuck. now , ready to move on.">
+      <created>1490062412614</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1490062412614</updated>
+    </task>
+    <task id="LOCAL-00021" summary="okay, i decide to redo. i understand what means lock and conditional variable.">
+      <created>1490066019662</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1490066019662</updated>
+    </task>
+    <task id="LOCAL-00022" summary="okay, i decide to redo. i understand what means lock and conditional variable.">
+      <created>1490129081319</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1490129081319</updated>
+    </task>
+    <task id="LOCAL-00023" summary="redo">
+      <created>1490131797139</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1490131797139</updated>
+    </task>
+    <task id="LOCAL-00024" summary="redo">
+      <created>1490140979703</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1490140979703</updated>
+    </task>
+    <task id="LOCAL-00025" summary="redo">
+      <created>1490141185940</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1490141185940</updated>
+    </task>
+    <task id="LOCAL-00026" summary="redo static">
+      <created>1490141556533</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1490141556533</updated>
+    </task>
+    <task id="LOCAL-00027" summary="another time, redo, understand lock queue, scheduler queue, and condition queue">
+      <created>1490230450522</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1490230450522</updated>
+    </task>
+    <task id="LOCAL-00028" summary="redo third times">
+      <created>1490240897067</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1490240897067</updated>
+    </task>
+    <task id="LOCAL-00029" summary="redo third times">
+      <created>1490240996387</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1490240996387</updated>
+    </task>
+    <task id="LOCAL-00030" summary="redo third times">
+      <created>1490241308350</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1490241308350</updated>
+    </task>
+    <task id="LOCAL-00031" summary="redo third times">
+      <created>1490241638191</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1490241638191</updated>
+    </task>
+    <task id="LOCAL-00032" summary="redo third times">
+      <created>1490241946392</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1490241946392</updated>
+    </task>
+    <task id="LOCAL-00033" summary="redo third times">
+      <created>1490241995883</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1490241995883</updated>
+    </task>
+    <task id="LOCAL-00034" summary="redo third times">
+      <created>1490242236325</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1490242236325</updated>
+    </task>
+    <task id="LOCAL-00035" summary="redo third times">
+      <created>1490242419449</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1490242419449</updated>
+    </task>
+    <task id="LOCAL-00036" summary="redo third times">
+      <created>1490242917090</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1490242917090</updated>
+    </task>
+    <task id="LOCAL-00037" summary="redo third times">
+      <created>1490243056922</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1490243056922</updated>
+    </task>
+    <task id="LOCAL-00038" summary="redo third times">
+      <created>1490243196919</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1490243196919</updated>
+    </task>
+    <task id="LOCAL-00039" summary="redo third times">
+      <created>1490243432551</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1490243432551</updated>
+    </task>
+    <task id="LOCAL-00040" summary="redo third times">
+      <created>1490243476541</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1490243476541</updated>
+    </task>
+    <task id="LOCAL-00041" summary="redo third times">
+      <created>1490243785916</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1490243785916</updated>
+    </task>
+    <task id="LOCAL-00042" summary="redo third times">
+      <created>1490244094782</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1490244094782</updated>
+    </task>
+    <task id="LOCAL-00043" summary="redo third times">
+      <created>1490244590099</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1490244590099</updated>
+    </task>
+    <task id="LOCAL-00044" summary="redo third times">
+      <created>1490244899419</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1490244899419</updated>
+    </task>
+    <task id="LOCAL-00045" summary="redo third times">
+      <created>1490245117590</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1490245117590</updated>
+    </task>
+    <task id="LOCAL-00046" summary="redo third times">
+      <created>1490245334362</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1490245334362</updated>
+    </task>
+    <task id="LOCAL-00047" summary="redo third times">
+      <created>1490245804470</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1490245804470</updated>
+    </task>
+    <task id="LOCAL-00048" summary="redo third times">
+      <created>1490246586150</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1490246586150</updated>
+    </task>
+    <task id="LOCAL-00049" summary="redo third times">
+      <created>1490246971795</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1490246971795</updated>
+    </task>
+    <task id="LOCAL-00050" summary="redo third times">
+      <created>1490247840351</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1490247840352</updated>
+    </task>
+    <task id="LOCAL-00051" summary="redo third times">
+      <created>1490275456943</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1490275456943</updated>
+    </task>
+    <task id="LOCAL-00052" summary="before sunset">
+      <created>1490308452636</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1490308452637</updated>
+    </task>
+    <task id="LOCAL-00053" summary="before sunset">
+      <created>1490310503140</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1490310503140</updated>
+    </task>
+    <task id="LOCAL-00054" summary="before sunset">
+      <created>1490389024980</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1490389024980</updated>
+    </task>
+    <task id="LOCAL-00055" summary="update pscheduler">
+      <created>1490389094366</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1490389094366</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="971000" />
+    <option name="totallyTimeSpent" value="198140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -259,39 +1241,70 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="116" y="174" width="1348" height="835" extended-state="0" />
-    <editor active="false" />
+    <frame x="287" y="46" width="1019" height="986" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5030628" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30852503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.49693722" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22588055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5030628" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22899505" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2930622" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32746115" sideWeight="0.49693722" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14717188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="745" y="541" width="379" height="539" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5030628" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294893" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.49693722" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29533678" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284974" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1383855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="745" y="541" width="379" height="539" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -301,10 +1314,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second shot" />
-    <option name="LAST_COMMIT_MESSAGE" value="second shot" />
+    <MESSAGE value="4 shot" />
+    <MESSAGE value="after school, before due day." />
+    <MESSAGE value="before submit." />
+    <MESSAGE value="spring break job" />
+    <MESSAGE value="night work" />
+    <MESSAGE value="morning work, sunday. aim to solve prj 1,2,3" />
+    <MESSAGE value="start at night" />
+    <MESSAGE value="monday morning" />
+    <MESSAGE value="monday night" />
+    <MESSAGE value="tuesday night" />
+    <MESSAGE value="done project1" />
+    <MESSAGE value="wed afternoon, question, priority scheduler, do we need to implement aging and consider different queues?" />
+    <MESSAGE value="time to wake up and keep working on this project." />
+    <MESSAGE value="weired import" />
+    <MESSAGE value="before go to cha" />
+    <MESSAGE value="want to redo, then i find out i was actually just stuck. now , ready to move on." />
+    <MESSAGE value="okay, i decide to redo. i understand what means lock and conditional variable." />
+    <MESSAGE value="redo" />
+    <MESSAGE value="redo static" />
+    <MESSAGE value="another time, redo, understand lock queue, scheduler queue, and condition queue" />
+    <MESSAGE value="redo third times" />
+    <MESSAGE value="before sunset" />
+    <MESSAGE value="update pscheduler" />
+    <option name="LAST_COMMIT_MESSAGE" value="update pscheduler" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="16" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -312,13 +1350,671 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
+            <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="62" column="47" lean-forward="false" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
+          <folding>
+            <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
+            <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="231" column="5" lean-forward="false" selection-start-line="231" selection-start-column="5" selection-end-line="231" selection-end-column="5" />
+        <state relative-caret-position="5058">
+          <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
           <folding>
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2851#2852#0" expanded="true" />
+            <element signature="docComment;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#ready#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="936">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding>
+            <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
+            <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4215">
+          <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#ready#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="53" lean-forward="true" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
+          <folding>
+            <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
+            <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4215">
+          <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#ready#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="44" column="51" lean-forward="true" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
+          <folding>
+            <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
+            <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4215">
+          <caret line="281" column="34" lean-forward="false" selection-start-line="281" selection-start-column="34" selection-end-line="281" selection-end-column="34" />
+          <folding>
+            <element signature="docComment;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#ready#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="32" lean-forward="false" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/TCB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="327" column="0" lean-forward="false" selection-start-line="327" selection-start-column="0" selection-end-line="327" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/AbstractCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="400" column="42" lean-forward="false" selection-start-line="400" selection-start-column="42" selection-end-line="400" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Lib.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="486" column="25" lean-forward="true" selection-start-line="486" selection-start-column="25" selection-end-line="486" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Rider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/package.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadedKernel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="71" column="25" lean-forward="false" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Timer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="57" column="16" lean-forward="false" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Stats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="7" lean-forward="true" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/TreeSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="91" column="13" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Interrupt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4950">
+          <caret line="281" column="23" lean-forward="false" selection-start-line="281" selection-start-column="23" selection-end-line="281" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="136" column="13" lean-forward="false" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="323" column="27" lean-forward="false" selection-start-line="323" selection-start-column="27" selection-end-line="323" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/AbstractSequentialList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="238" column="23" lean-forward="false" selection-start-line="238" selection-start-column="23" selection-end-line="238" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/RoundRobinScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="64" column="11" lean-forward="true" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2124#2133#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ElevatorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/ElevatorControllerInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Cat.java" />
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/SynchList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="method#add#0;class#SynchList#0" expanded="false" />
+            <element signature="method#removeFirst#0;class#SynchList#0" expanded="false" />
+            <element signature="class#PingTest#0;class#SynchList#0" expanded="false" />
+            <element signature="method#selfTest#0;class#SynchList#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/LotteryScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="266" column="13" lean-forward="false" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/ThreadQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Alarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-548">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat2.java" />
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Communicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="53" column="7" lean-forward="false" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="59" column="27" lean-forward="false" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding>
+            <element signature="class#PingTest#0;class#Semaphore#0" expanded="false" />
+            <element signature="method#selfTest#0;class#Semaphore#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/machine/Machine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="83" column="42" lean-forward="false" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/ag/BoatGrader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="62" column="18" lean-forward="false" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="e#739#740#0" expanded="false" />
+            <element signature="e#803#804#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="97" column="50" lean-forward="false" selection-start-line="97" selection-start-column="50" selection-end-line="97" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Boat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/KThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="290" column="47" lean-forward="true" selection-start-line="290" selection-start-column="0" selection-end-line="291" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#currentThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#KThread#1;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="method#setTarget#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="method#setName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#getName#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#toString#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="method#compareTo#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#fork#0;class#KThread#0" expanded="false" />
+            <element signature="method#runThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#begin#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#finish#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="method#yield#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#sleep#0;class#KThread#0" expanded="false" />
+            <element signature="method#ready#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#createIdleThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="method#runNextThread#0;class#KThread#0" expanded="false" />
+            <element signature="docComment;method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#KThread#0" expanded="false" />
+            <element signature="method#restoreState#0;class#KThread#0" expanded="false" />
+            <element signature="method#saveState#0;class#KThread#0" expanded="false" />
+            <element signature="class#PingTest#0;class#KThread#0" expanded="false" />
+            <element signature="method#run#0;class#PingTest#0;class#KThread#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/nachos/threads/PriorityScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="253" column="32" lean-forward="false" selection-start-line="253" selection-start-column="32" selection-end-line="253" selection-end-column="32" />
+          <folding>
+            <element signature="docComment;method#PriorityScheduler#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#newThreadQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#getEffectivePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#increasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#decreasePriority#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;class#PriorityQueue#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#ThreadState#1;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#getEffectivePriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="e#6783#6784#0" expanded="true" />
+            <element signature="e#6834#6835#0" expanded="true" />
+            <element signature="docComment;method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="method#setPriority#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#waitForAccess#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
+            <element signature="docComment;method#acquire#0;class#ThreadState#0;class#PriorityScheduler#0" expanded="false" />
           </folding>
         </state>
       </provider>
