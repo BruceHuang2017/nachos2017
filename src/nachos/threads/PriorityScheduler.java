@@ -283,6 +283,7 @@ public class PriorityScheduler extends Scheduler {
 		 */
 		public void waitForAccess(PriorityQueue waitQueue) {
 			waitQueue.stateQueue.add(this);
+			if(waitQueue.transferPriority)
 			myPQList.add(waitQueue);
 
 		}
